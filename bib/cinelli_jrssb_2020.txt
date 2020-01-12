@@ -1,0 +1,14 @@
+- plain text:
+
+Cinelli, C. and Hazlett, C. (2020). Making sense of sensitivity: Extending omitted variable bias. Journal of the Royal Statistical Society: Series B (Statistical Methodology), DOI:10.1111/rssb.12348
+
+- bibtex
+
+@article{cinelli:jrss2020,
+	Author = {Cinelli, Carlos and Hazlett, Chad},
+	Journal = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+	Number = {n/a},
+	Title = {Making Sense of Sensitivity: Extending Omitted Variable Bias},
+	Volume = {n/a},
+	Year = {2020}}
+
