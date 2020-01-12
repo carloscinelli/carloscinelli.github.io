@@ -1,229 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-      
+
     <head>
-    
-  <title>Carlos Cinelli</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
-  </head>
-     
+
+        <title>Carlos Cinelli</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+
 
     <div class="container">
         <h1><center>Carlos Cinelli</center></h1>
         <center> 
             [<a href = "index.html"> home </a>] 
-<!--            [<a href = "research.html"> research </a>]-->
+            <!--            [<a href = "research.html"> research </a>]-->
             [<a href = "publications.html" class="text-danger"> publications </a> ]
             [<a href = "software.html"> software </a> ]
             [<a href = "files/cinelli_cv.pdf" target="_blank"> cv </a>]
         </center>
     </div>
     <hr width= 50%>
-    
-   <div class="container">
-        
-<!--
-       <h4>
-        Publications
-       </h4>
+
+    <div class="container">
+
+        <!--
+<h4>
+Publications
+</h4>
 -->
-<!--
-    <br>
-       <p>
-           You can find a list of my recent publications below. You may also check.
-       </p>
+        <!--
+<br>
+<p>
+You can find a list of my recent publications below. You may also check.
+</p>
 -->
 
-<!--
+        <!--
 <br>
 <h3><center>Peer Reviewed</center> </h3>
 <br>
 -->
-<p align="center">Alternatively, check <a href="files/cinelli_cv.pdf" target="_blank">my CV</a> or <a href = "https://scholar.google.com/citations?user=4fyZLIoAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</p>
-    
-       <h3>
-<!--           <center>-->
-               Peer Reviewed
-<!--           </center> -->
-       </h3>
-       <br>
+        <p align="center">Alternatively, check <a href="files/cinelli_cv.pdf" target="_blank">my CV</a> or <a href = "https://scholar.google.com/citations?user=4fyZLIoAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</p>
 
-       
+        <h3>
+            <!--           <center>-->
+            Peer Reviewed
+            <!--           </center> -->
+        </h3>
+        <br>
 
-       <ul>
-    
-<!--
-    <h4>2020+</h4>
-    <br>
+
+
+        <ul>
+
+            <!--
+<h4>2020+</h4>
+<br>
 -->
 
-    
-           <li> 
-        
-               <b>Carlos Cinelli</b> and Chad Hazlett (2020). "Making sense of sensitivity: Extending omitted variable bias." <b>Journal of the Royal Statistical Society, Series B (Statistical Methodology).</b>
-        
-               <i>forthcoming.</i><br> 
-               
-               [ <a href="#msos_abstract" data-toggle="collapse"> abstract </a> ]
-        
-               [<a href = "https://www.researchgate.net/publication/322509816_Making_Sense_of_Sensitivity_Extending_Omitted_Variable_Bias" 
-                target="_blank"> preprint </a>] 
-               
-               [<a href = "https://doi.org/10.1111/rssb.12348"
-                target="_blank"> journal early view </a>] 
-               
-               [<a href="https://cran.r-project.org/web/packages/sensemakr/index.html" target="_blank"> r package 
-               </a> ]
-               
-               [ <a href="https://carloscinelli.shinyapps.io/robustness_value/"  target="_blank">
+
+            <li> 
+
+                <b>Carlos Cinelli</b> and Chad Hazlett (2020). "Making sense of sensitivity: Extending omitted variable bias." <b>Journal of the Royal Statistical Society, Series B (Statistical Methodology).</b>
+
+                <i>forthcoming.</i><br> 
+
+                [ <a href="#msos_abstract" data-toggle="collapse"> abstract </a> ]
+
+                [<a href = "https://www.researchgate.net/publication/322509816_Making_Sense_of_Sensitivity_Extending_Omitted_Variable_Bias" 
+                    target="_blank"> preprint </a>] 
+
+                [<a href = "https://doi.org/10.1111/rssb.12348"
+                    target="_blank"> journal early view </a>] 
+
+                [<a href="https://cran.r-project.org/web/packages/sensemakr/index.html" target="_blank"> r package 
+                </a> ]
+
+                [ <a href="https://carloscinelli.shinyapps.io/robustness_value/"  target="_blank">
                 shiny app 
-               </a>]
-               
-               [<a href = "bib/cinelli_jrssb_2020.txt"
-                target="_blank"> cite </a>]
-        
+                </a>]
+
+                [<a href = "bib/cinelli_jrssb_2020.txt"
+                    target="_blank"> cite </a>]
+
             </li>
-            
-		<div id="msos_abstract" class = "collapse"><br>
-<div class = "well text-justify">We extend the omitted variable bias framework with a suite of tools for sensitivity analysis in regression models that: (i) does not require assumptions about the treatment assignment nor the nature of confounders; (ii) naturally handles multiple confounders, possibly acting non-linearly; (iii) exploits expert knowledge to bound sensitivity parameters; and, (iv) can be easily computed using only standard regression results. In particular, we introduce two novel sensitivity measures suited for routine reporting. The robustness value describes the minimum strength of association unobserved confounding would need to have, both with the treatment and the outcome, to change the research conclusions. The partial R2 of the treatment with the outcome shows how strongly confounders explaining all the residual outcome variation would have to be associated with the treatment to eliminate the estimated effect. Next, we offer graphical tools for elaborating on problematic confounders, examining the sensitivity of point estimates, t-values, as well as “extreme scenarios”. Finally, we describe problems with a common “benchmarking” practice and introduce a novel procedure to formally bound the strength of confounders based on comparison to observed covariates. We apply these methods to a running example that estimates the effect of exposure to violence on attitudes toward peace.</div></div>
-		    
-    <br>
-        
-<!--
-    <br>
-    <br>
-    <h4>2019</h4>
-    <br>
+
+            <div id="msos_abstract" class = "collapse"><br>
+                <div class = "well text-justify">We extend the omitted variable bias framework with a suite of tools for sensitivity analysis in regression models that: (i) does not require assumptions about the treatment assignment nor the nature of confounders; (ii) naturally handles multiple confounders, possibly acting non-linearly; (iii) exploits expert knowledge to bound sensitivity parameters; and, (iv) can be easily computed using only standard regression results. In particular, we introduce two novel sensitivity measures suited for routine reporting. The robustness value describes the minimum strength of association unobserved confounding would need to have, both with the treatment and the outcome, to change the research conclusions. The partial R2 of the treatment with the outcome shows how strongly confounders explaining all the residual outcome variation would have to be associated with the treatment to eliminate the estimated effect. Next, we offer graphical tools for elaborating on problematic confounders, examining the sensitivity of point estimates, t-values, as well as “extreme scenarios”. Finally, we describe problems with a common “benchmarking” practice and introduce a novel procedure to formally bound the strength of confounders based on comparison to observed covariates. We apply these methods to a running example that estimates the effect of exposure to violence on attitudes toward peace.</div></div>
+
+            <br>
+
+            <!--
+<br>
+<br>
+<h4>2019</h4>
+<br>
 -->
-    
-    <li>
-        <b>Carlos Cinelli</b>, Kumor, D., Chen, B., Pearl, J. and Bareinboim, E. (2019). "Sensitivity Analysis of Linear Structural Causal Models." <b>International Conference on Machine Learning.</b> 
-         <br>
-        
-        [<a href="#linear_abstract" data-toggle="collapse" > abstract </a>]
-        
-        [<a href = "https://www.researchgate.net/publication/338105116_Sensitivity_Analysis_of_Linear_Structural_Causal_Models" 
-            target="_blank"> preprint </a>]
-        
-        [<a href = "http://proceedings.mlr.press/v97/cinelli19a/cinelli19a.pdf"
-            target="_blank"> paper </a>]
-        
-        [<a href = ""
-            target="_blank"> bibtex </a>]
-    
-    </li>
-            
-<div id="linear_abstract" class = "collapse"><br>
-<div class = "well text-justify">Causal inference requires assumptions about the data generating process, many of which are unverifiable from the data. Given that some causal assumptions might be uncertain or disputed, formal methods are needed to quantify how sensitive research conclusions are to violations of those assumptions. Although an extensive literature exists on the topic, most results are limited to specific model structures, while a general-purpose algorithmic framework for sensitivity analysis is still lacking. In this paper, we develop a formal, systematic approach to sensitivity analysis for arbitrary linear Structural Causal Models (SCMs). We start by formalizing sensitivity analysis as a constrained identification problem. We then develop an efficient, graph-based identification algorithm that exploits non-zero constraints on both directed and bidirected edges. This allows researchers to systematically derive sensitivity curves for a target causal quantity with an arbitrary set of path coefficients and error covariances as sensitivity parameters. These results can be used to display the degree to which violations of causal assumptions affect the target quantity of interest, and to judge, on scientific grounds, whether problematic degrees of violations are plausible.</div></div>
-    <br>
-    
-    <li>
-        <b>Carlos Cinelli</b> and Judea Pearl (2018). "On the utility of Causal Diagrams for Modeling Attrition." <b>Epidemiology.</b>
+
+            <li>
+                <b>Carlos Cinelli</b>, Kumor, D., Chen, B., Pearl, J. and Bareinboim, E. (2019). "Sensitivity Analysis of Linear Structural Causal Models." <b>International Conference on Machine Learning.</b> 
+                <br>
+
+                [<a href="#linear_abstract" data-toggle="collapse" > abstract </a>]
+
+                [<a href = "https://www.researchgate.net/publication/338105116_Sensitivity_Analysis_of_Linear_Structural_Causal_Models" 
+                    target="_blank"> preprint </a>]
+
+                [<a href = "http://proceedings.mlr.press/v97/cinelli19a/cinelli19a.pdf"
+                    target="_blank"> paper </a>]
+
+                [<a href = ""
+                    target="_blank"> bibtex </a>]
+
+            </li>
+
+            <div id="linear_abstract" class = "collapse"><br>
+                <div class = "well text-justify">Causal inference requires assumptions about the data generating process, many of which are unverifiable from the data. Given that some causal assumptions might be uncertain or disputed, formal methods are needed to quantify how sensitive research conclusions are to violations of those assumptions. Although an extensive literature exists on the topic, most results are limited to specific model structures, while a general-purpose algorithmic framework for sensitivity analysis is still lacking. In this paper, we develop a formal, systematic approach to sensitivity analysis for arbitrary linear Structural Causal Models (SCMs). We start by formalizing sensitivity analysis as a constrained identification problem. We then develop an efficient, graph-based identification algorithm that exploits non-zero constraints on both directed and bidirected edges. This allows researchers to systematically derive sensitivity curves for a target causal quantity with an arbitrary set of path coefficients and error covariances as sensitivity parameters. These results can be used to display the degree to which violations of causal assumptions affect the target quantity of interest, and to judge, on scientific grounds, whether problematic degrees of violations are plausible.</div></div>
+            <br>
+
+            <li>
+                <b>Carlos Cinelli</b> and Judea Pearl (2018). "On the utility of Causal Diagrams for Modeling Attrition." <b>Epidemiology.</b>
+                <br>
+                [ <a href="#attrition_abstract" data-toggle="collapse"> abstract </a> ]
+
+                [<a href = "https://www.researchgate.net/publication/326944639_On_the_utility_of_causal_diagrams_in_modeling_attrition_a_practical_example"
+                    target="_blank"> preprint </a>]
+
+                [<a href = ""
+                    target="_blank"> bibtex </a>]
+                <!--        <br>-->
+            </li>
+            <div id="attrition_abstract" class = "collapse"><br>
+                <div class = "well text-justify">In a recent communication, Breskin, Cole and Hudgens aimed to demonstrate “how single-world intervention graphs can supplement traditional causal diagrams”. The example used in their demonstration involved selection bias due to attrition, namely, subjects dropping out from a randomized trial before the outcome is observed. Here we use the same example to demonstrate the opposite conclusion; the derivation presented by Breskin et al. is in fact longer and more complicated than the standard, three-step derivation facilitated by traditional causal diagrams. We further show that more natural solutions to attrition problems are obtained when viewed as missing-data problems encoded in causal diagrams.</div></div>
+
+
+            <br>
+        </ul>
+
+
+        <h3> 
+            <!--           <center> -->
+            Work in progress
+            <!--           </center> -->
+        </h3>
         <br>
-        [ <a href="#attrition_abstract" data-toggle="collapse"> abstract </a> ]
-        
-        [<a href = "https://www.researchgate.net/publication/326944639_On_the_utility_of_causal_diagrams_in_modeling_attrition_a_practical_example"
-            target="_blank"> preprint </a>]
-        
-        [<a href = ""
-            target="_blank"> bibtex </a>]
-<!--        <br>-->
-    </li>
-<div id="attrition_abstract" class = "collapse"><br>
-<div class = "well text-justify">In a recent communication, Breskin, Cole and Hudgens aimed to demonstrate “how single-world intervention graphs can supplement traditional causal diagrams”. The example used in their demonstration involved selection bias due to attrition, namely, subjects dropping out from a randomized trial before the outcome is observed. Here we use the same example to demonstrate the opposite conclusion; the derivation presented by Breskin et al. is in fact longer and more complicated than the standard, three-step derivation facilitated by traditional causal diagrams. We further show that more natural solutions to attrition problems are obtained when viewed as missing-data problems encoded in causal diagrams.</div></div>
-            
-           
-    <br>
-</ul>
-       
 
-       <h3> 
-<!--           <center> -->
-               Work in progress
-<!--           </center> -->
-       </h3>
-       <br>
-       
-    <ul>
-    
-    
-    <li>
-        <b>Carlos Cinelli</b> and Judea Pearl. "Generalizing Experimental Results by Leveraging Knowledge of Mechanisms."  <i>submitted</i>. 
-        <br>  
-        [<a href="#mechanisms_abstract" data-toggle="collapse" > abstract </a>]
-        [<a href = "https://www.researchgate.net/publication/338105463_Generalizing_Experimental_Results_by_Leveraging_Knowledge_of_Mechanisms" target="_blank"> preprint </a>]
-    </li>
-        <div id="mechanisms_abstract" class = "collapse"><br>
-<div class = "well text-justify">We show how experimental results can be generalized across diverse populations by leveraging knowledge of mechanisms that produce the outcome of interest. We use Structural Causal Models (SCM) and a refined version of selection diagrams to represent such knowledge , and to decide whether it entails conditions that enable generalizations. We further provide bounds for the target effect when some of these conditions are violated. We conclude by demonstrating that the structural account offers a more reliable way of analyzing generalization than positing counterfactual consequences of the actual mechanisms.</div></div>
-    <br>
+        <ul>
 
-    <li>
-        <b>Carlos Cinelli</b> and Chad Hazlett. "Making Sense of IV Sensitivity: Omitted Variable Bias for Instrumental Variables." 
-    </li>
-    <br>
-    
-    <li>
-        <b>Carlos Cinelli</b> and Chad Hazlett. "sensemakr: Sensitivity Analysis Tools for OLS."
-    </li>
-    <br>
-    </ul>
-    
-      
-       <h3>
-<!--          <center>-->
-              Pre-PhD 
-<!--          </center>-->
-       </h3>
-       <br>
-       
-    <ul>
-    <li>
-        <b>Carlos Cinelli</b> and Rogerio Arthmar. “The debating tradition in Britain and the new political economy: William Thompson and John Stuart Mill at the London Co-operative Society in 1825.” Nova Economia, v.28 (2), p.609-636, 2018.
 
-    </li>
-    <br>
-    
-    <li>
-        Rogerio Arthmar and <b>Carlos Cinelli</b> (in portuguese). The classical economics between laissez-faire and socialism. EconomiA, v. 14, p. 227-252, 2013.
-    </li>
-    <br>
-    
-    <li>
-        <b>Carlos Cinelli</b> (in portuguese). Voluntary transfers and municipal corruption in Brazil: preliminary evidence from the irregular accounts registry of the Federal Court of Accounts. Revista Economia e Tecnologia, v. 7, p. 89-97, 2011.
-    </li>
-    <br>
-    
-    
-    <li>
-        <b>Carlos Cinelli</b> and Rogerio Arthmar (in portuguese). When the classical liberal and the socialist confront: Bastiat, Proudhon and capital rent. Nova Economia, v. 20, p. 509-541, 2010.
-    </li>
-    
+            <li>
+                <b>Carlos Cinelli</b> and Judea Pearl. "Generalizing Experimental Results by Leveraging Knowledge of Mechanisms."  <i>submitted</i>. 
+                <br>  
+                [<a href="#mechanisms_abstract" data-toggle="collapse" > abstract </a>]
+                [<a href = "https://www.researchgate.net/publication/338105463_Generalizing_Experimental_Results_by_Leveraging_Knowledge_of_Mechanisms" target="_blank"> preprint </a>]
+            </li>
+            <div id="mechanisms_abstract" class = "collapse"><br>
+                <div class = "well text-justify">We show how experimental results can be generalized across diverse populations by leveraging knowledge of mechanisms that produce the outcome of interest. We use Structural Causal Models (SCM) and a refined version of selection diagrams to represent such knowledge , and to decide whether it entails conditions that enable generalizations. We further provide bounds for the target effect when some of these conditions are violated. We conclude by demonstrating that the structural account offers a more reliable way of analyzing generalization than positing counterfactual consequences of the actual mechanisms.</div></div>
+            <br>
 
-    <br>
-    
-</ul>
-       
-    
-    <hr width= 50%>
-    <footer>
-        
-        <center> 
-            
-            [<a href = "https://github.com/carloscinelli" target="_blank"> 
-            GitHub </a>] 
-            
-            [<a href = "https://scholar.google.com/citations?user=4fyZLIoAAAAJ&hl=en" target="_blank"> 
-            Google Scholar </a>] 
-            
-            [<a href = "https://twitter.com/analisereal" target="_blank"> Twitter </a>] 
-            
-        </center>  
+            <li>
+                <b>Carlos Cinelli</b> and Chad Hazlett. "Making Sense of IV Sensitivity: Omitted Variable Bias for Instrumental Variables." 
+            </li>
+            <br>
+
+            <li>
+                <b>Carlos Cinelli</b> and Chad Hazlett. "sensemakr: Sensitivity Analysis Tools for OLS."
+            </li>
+            <br>
+        </ul>
+
+
+        <h3>
+            <!--          <center>-->
+            Pre-PhD 
+            <!--          </center>-->
+        </h3>
         <br>
-    </footer>
-    
-<html>
+
+        <ul>
+            <li>
+                <b>Carlos Cinelli</b> and Rogerio Arthmar. “The debating tradition in Britain and the new political economy: William Thompson and John Stuart Mill at the London Co-operative Society in 1825.” Nova Economia, v.28 (2), p.609-636, 2018.
+
+            </li>
+            <br>
+
+            <li>
+                Rogerio Arthmar and <b>Carlos Cinelli</b> (in portuguese). The classical economics between laissez-faire and socialism. EconomiA, v. 14, p. 227-252, 2013.
+            </li>
+            <br>
+
+            <li>
+                <b>Carlos Cinelli</b> (in portuguese). Voluntary transfers and municipal corruption in Brazil: preliminary evidence from the irregular accounts registry of the Federal Court of Accounts. Revista Economia e Tecnologia, v. 7, p. 89-97, 2011.
+            </li>
+            <br>
+
+
+            <li>
+                <b>Carlos Cinelli</b> and Rogerio Arthmar (in portuguese). When the classical liberal and the socialist confront: Bastiat, Proudhon and capital rent. Nova Economia, v. 20, p. 509-541, 2010.
+            </li>
+
+
+            <br>
+
+        </ul>
+
+
+        <hr width= 50%>
+        <footer>
+
+            <center> 
+
+                [<a href = "https://github.com/carloscinelli" target="_blank"> 
+                GitHub </a>] 
+
+                [<a href = "https://scholar.google.com/citations?user=4fyZLIoAAAAJ&hl=en" target="_blank"> 
+                Google Scholar </a>] 
+
+                [<a href = "https://twitter.com/analisereal" target="_blank"> Twitter </a>] 
+
+            </center>  
+            <br>
+        </footer>
+
+        <html>
