@@ -7,6 +7,35 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+div.circle-avatar{
+/* make it responsive */
+max-width: 100%;
+height:auto;
+display:block;
+/* div height to be the same as width*/
+width:70%;
+padding-top:70%;
+
+/* make it a circle */
+border-radius:50%;
+
+/* Centering on image`s center*/
+background-position-y: center;
+background-position-x: center;
+background-repeat: no-repeat;
+
+/* it makes the clue thing, takes smaller dimension to fill div */
+background-size: cover;
+
+/* it is optional, for making this div centered in parent*/
+margin: 0 auto;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+
 html {
   font-family: serif;
   -ms-text-size-adjust: 100%;
@@ -1084,7 +1113,7 @@ html {
 }
 body {
   font-family: "Palatino", "Times New Roman", Times, serif;
-  font-size: 14.5px;
+  font-size: 15px;
   line-height: 1.42857143;
   color: #333333;
   background-color: #ffffff;
