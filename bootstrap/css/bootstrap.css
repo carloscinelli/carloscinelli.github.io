@@ -11,14 +11,14 @@
 div.circle-avatar{
 /* make it responsive */
 max-width: 100%;
-height:auto;
-display:block;
+display:cover;
 /* div height to be the same as width*/
-width:70%;
-padding-top:70%;
+height:auto;
+width:150pt;
+padding-top:150pt;
 
 /* make it a circle */
-border-radius:50%;
+border-radius: 100pt;
 
 /* Centering on image`s center*/
 background-position-y: center;
