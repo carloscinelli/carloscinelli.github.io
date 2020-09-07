@@ -68,84 +68,7 @@ You can find a list of my recent publications below. You may also check.
 <!--        </h3>-->
         
 
-        <h3 style="font-variant:small-caps">     
-            <!--           <center> -->
-            Working Papers
-            <!--           </center> -->
-        </h3>
-        <br>
-
-        <ul>
-
-           
-            
-              <li>
-                <b><u>Carlos Cinelli,</u></b> Jeremy Ferwerda, and Chad Hazlett. "sensemakr: Sensitivity Analysis Tools for OLS in R and Stata."
-                <br>
-                [<a href="#jss_sensemakr" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
-                [<a href = "files/Cinelli%20et%20al%20(2020)%20-%20sensemakr.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
-                [<a href="https://cran.r-project.org/web/packages/sensemakr/index.html" target="_blank">&nbsp;r&nbsp;package&nbsp;</a>]
-                [<a href="https://ideas.repec.org/c/boc/bocode/s458773.html" target="_blank">&nbsp;stata&nbsp;module&nbsp;</a>]
-                [<a href="https://youtu.be/p3dfHj6ki68" target="_blank">&nbsp;video&nbsp;</a>]
-                <div id="jss_sensemakr" class = "collapse"><br>
-                <div class="well">This paper introduces the package sensemakr for R and Stata, which implements a suite of sensitivity analysis tools for regression models developed in Cinelli and Hazlett (2020a). Given a regression model, sensemakr can compute sensitivity statistics for routine reporting, such as the robustness value, which describes the minimum strength that unobserved confounders need to have to overturn a research conclusion. The package also provides plotting tools that visually demonstrate the sensitivity of point estimates and t-values to hypothetical confounders. Finally, sensemakr implements formal bounds on sensitivity parameters by means of comparison with the explanatory power of observed variables. All these tools are based on the familiar "omitted variable bias" framework, do not require assumptions regarding the functional form of the treatment assignment mechanism nor the distribution of the unobserved confounders, and naturally handle multiple, non-linear confounders. With sensemakr, users can transparently report the sensitivity of their causal inferences to unobserved confounding, thereby enabling a more precise, quantitative debate as to what can be concluded from imperfect observational studies.</div></div>
-            
-                
-            </li>
-            <br>
-            
-              <li>
-                <b><u>Carlos Cinelli</u></b> Andrew Forney, and Judea Pearl. "A Crash Course in Good and Bad Controls."
-                <br>
-                 [<a href="#crash-course" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
-                [<a href = "files/Cinelli%20et%20al%20(2020)%20-%20A%20Crash%20Course%20in%20Good%20and%20Bad%20Controls.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
-                <div id="crash-course" class = "collapse"><br>
-                <div class="well">Many students, especially in econometrics, express frustration with the way a problem known as “bad control” is evaded, if not mishandled, in the traditional literature. The problem arises when the addition of a variable to a regression equation produces an unintended discrepancy between the regression coefficient and the effect that the coefficient is expected to represent. Avoiding such discrepancies presents a challenge not only to practitioners of econometrics, but to all analysts in the data intensive sciences. This note describes graphical tools for understanding, visualizing, and resolving the problem through a series of illustrative examples. We have found that the examples presented here can serve as a powerful instructional device to supplement formal discussions of the problem. By making this “crash course” accessible to instructors and practitioners, we hope to avail these tools to a broader community of scientists concerned with the causal interpretation of regression models.</div></div>
-            
-                
-            </li>
-            <br>
-
-
-            <li>
-                <b><u>Carlos Cinelli</u></b> and Chad Hazlett. "An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables." 
-                <br>
-                [<a href="#ovb4iv-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
-                [<a href="https://www.youtube.com/watch?v=0b5VYWh8fN4" target="_blank">&nbsp;video&nbsp;</a>]
-<!--
-                [<a href="#iv_sensitivity" data-toggle="collapse" >&nbsp;preprint&nbsp;</a>]
-                <div id="iv_sensitivity" class = "collapse"><br>
-                <div class="well">Preprint under request.</div></div>
--->
-                <div id="ovb4iv-abstract" class = "collapse"><br>
-                <div class="well">We develop an "omitted variable bias" framework for sensitivity analysis of instrumental variable (IV) estimates that is immune to "weak instruments," naturally handles multiple "side-effects" (violations of the exclusion restriction assumption) and "confounders" (violations of the ignorability of the instrument assumption), exploits expert knowledge to bound sensitivity parameters, and can be easily implemented with standard software. Conveniently, we show that many pivotal conclusions regarding the sensitivity of the IV estimate (e.g. tests against the null hypothesis of a zero causal effect) can be reached simply through separate sensitivity analyses of two familiar auxiliary OLS estimates, namely, the effect of the instrument on the treatment (the "first stage") and the effect of the instrument on the outcome (the "reduced form"). More specifically, we introduce sensitivity statistics for routine reporting, such as (extreme) robustness values for IV estimates, describing the minimum strength that omitted variables need to have to invalidate the conclusions of an IV study. Next we provide visual displays that fully characterize the sensitivity of IV point estimates and confidence intervals to violations of the standard IV assumptions. Finally, we offer formal bounds on the worst possible bias under the assumption that the maximum explanatory power of omitted variables are no stronger than a multiple of the explanatory power of observed variables.  We apply our methods in a running example that estimates the returns to schooling.
-                    </div></div>
-                
-            
-            </li>
-            
-            <br>
-            
-               <li>
-                <b><u>Carlos Cinelli,</u></b> N. LaPierre, B. Hill, S. Sankararaman and E. Eskin. "Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy." 
-                <br>
-                [<a href="#mr-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
-<!--
-                [<a href="#iv_sensitivity" data-toggle="collapse" >&nbsp;preprint&nbsp;</a>]
-                <div id="iv_sensitivity" class = "collapse"><br>
-                <div class="well">Preprint under request.</div></div>
--->
-                <div id="mr-abstract" class = "collapse"><br>
-                <div class="well">Residual population stratification, batch effects and horizontal pleiotropy can lead to spurious findings in Mendelian randomization (MR) studies. We describe a sensitivity analysis framework that enables investigators to properly quantify the robustness of their findings against those (and other) unobserved validity threats, either individually or all acting simultaneously. We introduce sensitivity statistics for routine reporting in MR studies, summarizing the minimal strength of violations to explain away the MR causal effect estimate. We also provide visual sensitivity displays and formal methods to bound the worst bias caused by violations multiple times stronger than observed principal components, batch effects, as well as putative pleiotropic pathways. We demonstrate the use of our tools by showing that the MR estimate of the causal effect of body mass index on type 2 diabetes is robust, whereas the MR estimate of its causal effect on Townsend deprivation index is fragile.
-                </div></div>
-                
-            
-            </li>
-            
-            <br>
-
-          
-        </ul>
+        
         <!--            <br>-->
 
         <!--
@@ -292,6 +215,87 @@ target="_blank"> bibtex </a>]
             <br>
 
         </ol>
+        
+        
+        <h3 style="font-variant:small-caps">     
+            <!--           <center> -->
+            Working Papers
+            <!--           </center> -->
+        </h3>
+        <br>
+
+        <ul>
+
+           
+            
+              <li>
+                <b><u>Carlos Cinelli,</u></b> Jeremy Ferwerda, and Chad Hazlett. "sensemakr: Sensitivity Analysis Tools for OLS in R and Stata."
+                <br>
+                [<a href="#jss_sensemakr" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+                [<a href = "files/Cinelli%20et%20al%20(2020)%20-%20sensemakr.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
+                [<a href="https://cran.r-project.org/web/packages/sensemakr/index.html" target="_blank">&nbsp;r&nbsp;package&nbsp;</a>]
+                [<a href="https://ideas.repec.org/c/boc/bocode/s458773.html" target="_blank">&nbsp;stata&nbsp;module&nbsp;</a>]
+                [<a href="https://youtu.be/p3dfHj6ki68" target="_blank">&nbsp;video&nbsp;</a>]
+                <div id="jss_sensemakr" class = "collapse"><br>
+                <div class="well">This paper introduces the package sensemakr for R and Stata, which implements a suite of sensitivity analysis tools for regression models developed in Cinelli and Hazlett (2020a). Given a regression model, sensemakr can compute sensitivity statistics for routine reporting, such as the robustness value, which describes the minimum strength that unobserved confounders need to have to overturn a research conclusion. The package also provides plotting tools that visually demonstrate the sensitivity of point estimates and t-values to hypothetical confounders. Finally, sensemakr implements formal bounds on sensitivity parameters by means of comparison with the explanatory power of observed variables. All these tools are based on the familiar "omitted variable bias" framework, do not require assumptions regarding the functional form of the treatment assignment mechanism nor the distribution of the unobserved confounders, and naturally handle multiple, non-linear confounders. With sensemakr, users can transparently report the sensitivity of their causal inferences to unobserved confounding, thereby enabling a more precise, quantitative debate as to what can be concluded from imperfect observational studies.</div></div>
+            
+                
+            </li>
+            <br>
+            
+              <li>
+                <b><u>Carlos Cinelli</u></b> Andrew Forney, and Judea Pearl. "A Crash Course in Good and Bad Controls."
+                <br>
+                 [<a href="#crash-course" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+                [<a href = "files/Cinelli%20et%20al%20(2020)%20-%20A%20Crash%20Course%20in%20Good%20and%20Bad%20Controls.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
+                <div id="crash-course" class = "collapse"><br>
+                <div class="well">Many students, especially in econometrics, express frustration with the way a problem known as “bad control” is evaded, if not mishandled, in the traditional literature. The problem arises when the addition of a variable to a regression equation produces an unintended discrepancy between the regression coefficient and the effect that the coefficient is expected to represent. Avoiding such discrepancies presents a challenge not only to practitioners of econometrics, but to all analysts in the data intensive sciences. This note describes graphical tools for understanding, visualizing, and resolving the problem through a series of illustrative examples. We have found that the examples presented here can serve as a powerful instructional device to supplement formal discussions of the problem. By making this “crash course” accessible to instructors and practitioners, we hope to avail these tools to a broader community of scientists concerned with the causal interpretation of regression models.</div></div>
+            
+                
+            </li>
+            <br>
+
+               <li>
+                <b><u>Carlos Cinelli,</u></b> N. LaPierre, B. Hill, S. Sankararaman and E. Eskin. "Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy." 
+                <br>
+                [<a href="#mr-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+                 [<a href = "files/Cinelli%20et%20al%20(2020)%20-%20Robust%20Mendelian%20Randomization.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
+<!--
+                [<a href="#iv_sensitivity" data-toggle="collapse" >&nbsp;preprint&nbsp;</a>]
+                <div id="iv_sensitivity" class = "collapse"><br>
+                <div class="well">Preprint under request.</div></div>
+-->
+                <div id="mr-abstract" class = "collapse"><br>
+                <div class="well">Mendelian Randomization (MR) exploits genetic variants as instrumental variables to estimate the causal effect of an “exposure” trait on an “outcome” trait from observational data. However, residual population stratification, batch effects, and horizontal pleiotropy can lead to spurious findings in MR studies. We describe a suite of sensitivity analysis tools for MR that enables investigators to properly quantify the robustness of their findings against these (and other) unobserved validity threats. Specifically, we propose the routine reporting of sensitivity statistics that can be used to readily quantify the robustness of a MR result: (i) the partial R2 of the genetic instrument with the exposure and the outcome traits; and, (ii) the robustness value of both genetic associations. These statistics quantify the minimal strength of violations of the MR assumptions that would be necessary to explain away the MR causal effect estimate. We also provide intuitive displays to visualize the sensitivity of the MR estimate to any degree of violation, and formal methods to bound the worst-case bias caused by violations in terms of multiples of the observed strength of principal components, batch effects, as well as putative pleiotropic pathways. We demonstrate the use of these tools by showing that the MR estimate of the causal effect of body mass index (BMI) on type 2 diabetes is relatively robust, whereas the MR estimate of the causal effect of BMI on Townsend deprivation index is fragile.
+                </div></div>
+                
+            
+            </li>
+            
+            <br>
+
+            <li>
+                <b><u>Carlos Cinelli</u></b> and Chad Hazlett. "An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables." 
+                <br>
+                [<a href="#ovb4iv-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+                [<a href="https://www.youtube.com/watch?v=0b5VYWh8fN4" target="_blank">&nbsp;video&nbsp;</a>]
+<!--
+                [<a href="#iv_sensitivity" data-toggle="collapse" >&nbsp;preprint&nbsp;</a>]
+                <div id="iv_sensitivity" class = "collapse"><br>
+                <div class="well">Preprint under request.</div></div>
+-->
+                <div id="ovb4iv-abstract" class = "collapse"><br>
+                <div class="well">We develop an "omitted variable bias" framework for sensitivity analysis of instrumental variable (IV) estimates that is immune to "weak instruments," naturally handles multiple "side-effects" (violations of the exclusion restriction assumption) and "confounders" (violations of the ignorability of the instrument assumption), exploits expert knowledge to bound sensitivity parameters, and can be easily implemented with standard software. Conveniently, we show that many pivotal conclusions regarding the sensitivity of the IV estimate (e.g. tests against the null hypothesis of a zero causal effect) can be reached simply through separate sensitivity analyses of two familiar auxiliary OLS estimates, namely, the effect of the instrument on the treatment (the "first stage") and the effect of the instrument on the outcome (the "reduced form"). More specifically, we introduce sensitivity statistics for routine reporting, such as (extreme) robustness values for IV estimates, describing the minimum strength that omitted variables need to have to invalidate the conclusions of an IV study. Next we provide visual displays that fully characterize the sensitivity of IV point estimates and confidence intervals to violations of the standard IV assumptions. Finally, we offer formal bounds on the worst possible bias under the assumption that the maximum explanatory power of omitted variables are no stronger than a multiple of the explanatory power of observed variables.  We apply our methods in a running example that estimates the returns to schooling.
+                    </div></div>
+                
+            
+            </li>
+            
+            <br>
+            
+
+          
+        </ul>
         
         
         <h3 style="font-variant:small-caps">     
