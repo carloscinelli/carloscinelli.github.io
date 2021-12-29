@@ -126,6 +126,8 @@ You can find a list of my recent publications below. You may also check.
                 [<a href="https://carloscinelli.shinyapps.io/robustness_value/"  target="_blank">&nbsp;shiny&nbsp;app&nbsp;</a>]
                 
                 [<a href="https://ideas.repec.org/c/boc/bocode/s458773.html" target="_blank">&nbsp;stata&nbsp;module&nbsp;</a>]
+                
+                [<a href="https://github.com/nlapier2/PySensemakr" target="_blank">&nbsp;python&nbsp;package&nbsp;</a>]
 
 <!--                [<a href = "bib/cinelli_jrssb_2020.txt"-->
 <!--                    target="_blank">&nbsp;cite&nbsp;</a>]-->
@@ -293,7 +295,7 @@ target="_blank"> bibtex </a>]
                 <b><u>Carlos Cinelli</u></b> and Chad Hazlett. "An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables." 
                 <br>
                 [<a href="#ovb4iv-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
-                [<a href = "files/Cinelli%20and%20Hazlett%20(2020)%20-%20OVB%20for%20IV.pdf" target="_blank">&nbsp;preliminary&nbsp;draft&nbsp;</a>]
+                [<a href = "files/Cinelli%20and%20Hazlett%20(2020)%20-%20OVB%20for%20IV.pdf" target="_blank">&nbsp;draft&nbsp;</a>]
                 [<a href="https://www.youtube.com/watch?v=0b5VYWh8fN4" target="_blank">&nbsp;video&nbsp;</a>]
 <!--
                 [<a href="#iv_sensitivity" data-toggle="collapse" >&nbsp;preprint&nbsp;</a>]
@@ -302,6 +304,26 @@ target="_blank"> bibtex </a>]
 -->
                 <div id="ovb4iv-abstract" class = "collapse"><br>
                 <div class="well">We develop an "omitted variable bias" framework for sensitivity analysis of instrumental variable (IV) estimates that is immune to "weak instruments," naturally handles multiple "side-effects" (violations of the exclusion restriction assumption) and "confounders" (violations of the ignorability of the instrument assumption), exploits expert knowledge to bound sensitivity parameters, and can be easily implemented with standard software. Conveniently, we show that many pivotal conclusions regarding the sensitivity of the IV estimate (e.g. tests against the null hypothesis of a zero causal effect) can be reached simply through separate sensitivity analyses of two familiar auxiliary OLS estimates, namely, the effect of the instrument on the treatment (the "first stage") and the effect of the instrument on the outcome (the "reduced form"). More specifically, we introduce sensitivity statistics for routine reporting, such as (extreme) robustness values for IV estimates, describing the minimum strength that omitted variables need to have to invalidate the conclusions of an IV study. Next we provide visual displays that fully characterize the sensitivity of IV point estimates and confidence intervals to violations of the standard IV assumptions. Finally, we offer formal bounds on the worst possible bias under the assumption that the maximum explanatory power of omitted variables are no stronger than a multiple of the explanatory power of observed variables.  We apply our methods in a running example that estimates the returns to schooling.
+                    </div></div>
+                
+            
+            </li>
+            
+            <br>
+            
+            <li>
+                Victor Chernozhukov, <b><u>Carlos Cinelli</u></b>, Whitney Newey, Amit Sharma, and Vasilis Syrgkanis. "Omitted Variable Bias in Machine Learned Causal Models." 
+                <br>
+                [<a href="#ovb4ml-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+                [<a href = "files/Chernozhukov%20et%20al%20(2021)%20-%20OVB%20for%20ML.pdf" target="_blank">&nbsp;draft&nbsp;</a>]
+                [<a href="https://neurips.cc/virtual/2021/workshop/21871" target="_blank">&nbsp;video&nbsp;(Why-21)&nbsp;</a>]
+<!--
+                [<a href="#iv_sensitivity" data-toggle="collapse" >&nbsp;preprint&nbsp;</a>]
+                <div id="iv_sensitivity" class = "collapse"><br>
+                <div class="well">Preprint under request.</div></div>
+-->
+                <div id="ovb4ml-abstract" class = "collapse"><br>
+                <div class="well"> We derive general, yet simple, sharp bounds on the size of the omitted variable bias for a broad class of causal parameters that can be identified as linear functionals of the conditional expectation function of the outcome. Such functionals encompass many of the traditional targets of investigation in causal inference studies, such as, for example, (weighted) average of potential outcomes, average treatment effects (including subgroup effects, such as the effect on the treated), (weighted) average derivatives, and policy effects from shifts in co- variate distribution—all for general, nonparametric causal models. Our construction relies on the Riesz-Frechet representation of the target functional. Specifically, we show how the bound on the bias depends only on the additional variation that the latent variables create both in the outcome and in the Riesz representer for the parameter of interest. Moreover, in many important cases (e.g, average treatment effects in partially linear models, or in nonseparable models with a binary treatment) the bound is shown to depend on two easily interpretable quantities: the nonparametric partial R2 (Pearson’s “correlation ratio”) of the unobserved vari- ables with the treatment and with the outcome. Therefore, simple plausibility judgments on the maximum explanatory power of omitted variables (in explaining treatment and outcome variation) are sufficient to place overall bounds on the size of the bias. Finally, leveraging debiased machine learning, we provide flexible and efficient statistical inference methods to estimate the components of the bounds that are identifiable from the observed distribution.
                     </div></div>
                 
             
