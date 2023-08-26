@@ -293,37 +293,22 @@ target="_blank"> bibtex </a>]
 
            
             
-              <li>
-                <b><u>Carlos Cinelli,</u></b> Jeremy Ferwerda, and Chad Hazlett. "sensemakr: Sensitivity Analysis Tools for OLS in R and Stata."
-                <br>
-                [<a href="#jss_sensemakr" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
-                [<a href = "files/Cinelli%20et%20al%20(2020)%20-%20sensemakr.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
-                [<a href="http://carloscinelli.com/sensemakr/" target="_blank">&nbsp;r&nbsp;package&nbsp;</a>]
-                [<a href="https://ideas.repec.org/c/boc/bocode/s458773.html" target="_blank">&nbsp;stata&nbsp;module&nbsp;</a>]
-                [<a href="https://youtu.be/p3dfHj6ki68" target="_blank">&nbsp;video&nbsp;</a>]
-                <div id="jss_sensemakr" class = "collapse"><br>
-                <div class="well">This paper introduces the package sensemakr for R and Stata, which implements a suite of sensitivity analysis tools for regression models developed in Cinelli and Hazlett (2020a). Given a regression model, sensemakr can compute sensitivity statistics for routine reporting, such as the robustness value, which describes the minimum strength that unobserved confounders need to have to overturn a research conclusion. The package also provides plotting tools that visually demonstrate the sensitivity of point estimates and t-values to hypothetical confounders. Finally, sensemakr implements formal bounds on sensitivity parameters by means of comparison with the explanatory power of observed variables. All these tools are based on the familiar "omitted variable bias" framework, do not require assumptions regarding the functional form of the treatment assignment mechanism nor the distribution of the unobserved confounders, and naturally handle multiple, non-linear confounders. With sensemakr, users can transparently report the sensitivity of their causal inferences to unobserved confounding, thereby enabling a more precise, quantitative debate as to what can be concluded from imperfect observational studies.</div></div>
             
-                
-            </li>
-            <br>
-            
-
-
             <li>
-                <b><u>Carlos Cinelli</u></b> and Chad Hazlett. "An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables." 
+                Nicholas J. Irons and <b><u>Carlos Cinelli</u></b>. "Causally Sound Priors for Binary Experiments." 
                 <br>
-                [<a href="#ovb4iv-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
-                [<a href = "files/Cinelli%20and%20Hazlett%20(2020)%20-%20OVB%20for%20IV.pdf" target="_blank">&nbsp;draft&nbsp;</a>]
-                [<a href="https://www.youtube.com/watch?v=0b5VYWh8fN4" target="_blank">&nbsp;video&nbsp;</a>]
+                [<a href="#brease-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+                [<a href = "files/Irons%20and%20Cinelli%20(2023)%20-%20Causally%20Sound%20Priors.pdf" target="_blank">&nbsp;draft&nbsp;</a>]
+                
 <!--
                 [<a href="#iv_sensitivity" data-toggle="collapse" >&nbsp;preprint&nbsp;</a>]
                 <div id="iv_sensitivity" class = "collapse"><br>
                 <div class="well">Preprint under request.</div></div>
 -->
-                <div id="ovb4iv-abstract" class = "collapse"><br>
-                <div class="well">We develop an "omitted variable bias" framework for sensitivity analysis of instrumental variable (IV) estimates that is immune to "weak instruments," naturally handles multiple "side-effects" (violations of the exclusion restriction assumption) and "confounders" (violations of the ignorability of the instrument assumption), exploits expert knowledge to bound sensitivity parameters, and can be easily implemented with standard software. Conveniently, we show that many pivotal conclusions regarding the sensitivity of the IV estimate (e.g. tests against the null hypothesis of a zero causal effect) can be reached simply through separate sensitivity analyses of two familiar auxiliary OLS estimates, namely, the effect of the instrument on the treatment (the "first stage") and the effect of the instrument on the outcome (the "reduced form"). More specifically, we introduce sensitivity statistics for routine reporting, such as (extreme) robustness values for IV estimates, describing the minimum strength that omitted variables need to have to invalidate the conclusions of an IV study. Next we provide visual displays that fully characterize the sensitivity of IV point estimates and confidence intervals to violations of the standard IV assumptions. Finally, we offer formal bounds on the worst possible bias under the assumption that the maximum explanatory power of omitted variables are no stronger than a multiple of the explanatory power of observed variables.  We apply our methods in a running example that estimates the returns to schooling.
-                    </div></div>
+                <div id="brease-abstract" class = "collapse"><br>
+                <div class="well"> 
+                    We introduce the BREASE framework for the Bayesian analysis of randomized controlled trials with a binary treatment and a binary outcome. Approaching the problem from a causal inference perspective, we propose parameterizing the likelihood in terms of the baseline risk, efficacy, and side effects of the treatment, along with a flexible, yet intuitive and tractable jointly independent beta prior distribution on these parameters, which we show to be a generalization of the Dirichlet prior for the joint distribution of potential outcomes. Our approach has a number of desirable characteristics when compared to current mainstream alternatives: (i) it naturally induces prior dependence between expected outcomes in the treatment and control groups; (ii) as the baseline risk, efficacy and side effects are quantities inherently familiar to clinicians, the hyperparameters of the prior are directly interpretable, thus facilitating the elicitation of prior knowledge and sensitivity analysis; and (iii) it admits analytical formulae for the marginal likelihood, Bayes factor, and other posterior quantities, as well as exact posterior sampling via simulation, in cases where traditional MCMC fails. Empirical examples demonstrate the utility of our methods for estimation, hypothesis testing, and sensitivity analysis of treatment effects.
+                </div></div>
                 
             
             </li>
@@ -351,7 +336,46 @@ target="_blank"> bibtex </a>]
             
             </li>
             
+            
+            
+            <br>        
+
+
+            <li>
+                <b><u>Carlos Cinelli</u></b> and Chad Hazlett. "An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables." 
+                <br>
+                [<a href="#ovb4iv-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+                [<a href = "files/Cinelli%20and%20Hazlett%20(2020)%20-%20OVB%20for%20IV.pdf" target="_blank">&nbsp;draft&nbsp;</a>]
+                [<a href="https://www.youtube.com/watch?v=0b5VYWh8fN4" target="_blank">&nbsp;video&nbsp;</a>]
+<!--
+                [<a href="#iv_sensitivity" data-toggle="collapse" >&nbsp;preprint&nbsp;</a>]
+                <div id="iv_sensitivity" class = "collapse"><br>
+                <div class="well">Preprint under request.</div></div>
+-->
+                <div id="ovb4iv-abstract" class = "collapse"><br>
+                <div class="well">We develop an "omitted variable bias" framework for sensitivity analysis of instrumental variable (IV) estimates that is immune to "weak instruments," naturally handles multiple "side-effects" (violations of the exclusion restriction assumption) and "confounders" (violations of the ignorability of the instrument assumption), exploits expert knowledge to bound sensitivity parameters, and can be easily implemented with standard software. Conveniently, we show that many pivotal conclusions regarding the sensitivity of the IV estimate (e.g. tests against the null hypothesis of a zero causal effect) can be reached simply through separate sensitivity analyses of two familiar auxiliary OLS estimates, namely, the effect of the instrument on the treatment (the "first stage") and the effect of the instrument on the outcome (the "reduced form"). More specifically, we introduce sensitivity statistics for routine reporting, such as (extreme) robustness values for IV estimates, describing the minimum strength that omitted variables need to have to invalidate the conclusions of an IV study. Next we provide visual displays that fully characterize the sensitivity of IV point estimates and confidence intervals to violations of the standard IV assumptions. Finally, we offer formal bounds on the worst possible bias under the assumption that the maximum explanatory power of omitted variables are no stronger than a multiple of the explanatory power of observed variables.  We apply our methods in a running example that estimates the returns to schooling.
+                    </div></div>
+                
+            
+            </li>
+            
             <br>
+            
+             <li>
+                <b><u>Carlos Cinelli,</u></b> Jeremy Ferwerda, and Chad Hazlett. "sensemakr: Sensitivity Analysis Tools for OLS in R and Stata."
+                <br>
+                [<a href="#jss_sensemakr" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+                [<a href = "files/Cinelli%20et%20al%20(2020)%20-%20sensemakr.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
+                [<a href="http://carloscinelli.com/sensemakr/" target="_blank">&nbsp;r&nbsp;package&nbsp;</a>]
+                [<a href="https://ideas.repec.org/c/boc/bocode/s458773.html" target="_blank">&nbsp;stata&nbsp;module&nbsp;</a>]
+                [<a href="https://youtu.be/p3dfHj6ki68" target="_blank">&nbsp;video&nbsp;</a>]
+                <div id="jss_sensemakr" class = "collapse"><br>
+                <div class="well">This paper introduces the package sensemakr for R and Stata, which implements a suite of sensitivity analysis tools for regression models developed in Cinelli and Hazlett (2020a). Given a regression model, sensemakr can compute sensitivity statistics for routine reporting, such as the robustness value, which describes the minimum strength that unobserved confounders need to have to overturn a research conclusion. The package also provides plotting tools that visually demonstrate the sensitivity of point estimates and t-values to hypothetical confounders. Finally, sensemakr implements formal bounds on sensitivity parameters by means of comparison with the explanatory power of observed variables. All these tools are based on the familiar "omitted variable bias" framework, do not require assumptions regarding the functional form of the treatment assignment mechanism nor the distribution of the unobserved confounders, and naturally handle multiple, non-linear confounders. With sensemakr, users can transparently report the sensitivity of their causal inferences to unobserved confounding, thereby enabling a more precise, quantitative debate as to what can be concluded from imperfect observational studies.</div></div>
+            
+                
+            </li>
+            <br>
+            
             
 
           
