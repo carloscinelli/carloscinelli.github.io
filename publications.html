@@ -54,6 +54,18 @@
 
         <ul>
             <li>
+            Juejue Wang, Pedro Sant'Anna, Victor Chernozhukov and <b><u>Carlos Cinelli</u></b>. "Omitted Variable Bias in Differences-in-Differences Designs".
+            <br>
+            [<a href="#ovb4did-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+            [<a href="mailto:cinelli@uw.edu?subject=Draft%20Sensitivity%20DiD">&nbsp;email for draft&nbsp;</a>]
+            <div id="ovb4did-abstract" class = "collapse"><br>
+                <div class="well"> 
+                        We study the omitted-variable bias (OVB) problem in canonical difference-in-differences (DiD) designs when unobserved confounding induces departures from the parallel trends assumption. Our results provide a novel characterization of the OVB formula for the average treatment effect on the treated (ATT), which may be of independent interest. We show how the ATT bias is governed by the strength of confounding in the treatment-selection mechanism and provide alternative ways of quantifying this strength, such as (i) changes in the average odds of treatment among the treated, (ii) confounding imbalance between treated and control units, or (iii) variation explained in treatment odds among the untreated. We additionally consider DiD designs using linear regressions with two-way fixed effects and show how the OVB simplifies in such settings. Building on these results, we offer sensitivity statistics for routine reporting, describing the minimum strength of confounding required to overturn the conclusions of a DiD study, as well as formal bounds on the strength of confounders based on comparisons to observed covariates. Finally, we provide flexible and efficient statistical inference methods for the bounds on ATT, which can leverage modern machine learning algorithms for estimation. We demonstrate the utility of our approach in two empirical examples.
+                </div></div>
+            </li>
+            <br>
+            
+            <li>
             <b><u>Carlos Cinelli</u></b>, Avi Feller, Guido Imbens, Edward Kennedy, Sara Magliacane and Jose Zubizarreta. "A Dozen Challenges in Causality and Causal Inference".
             <br>
             [<a href="#challenges-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
@@ -65,57 +77,9 @@
             </li>
             <br>
             
-
-            
-            
-            <li>
-                Danielle Tsao, Ronan Perry and <b><u>Carlos Cinelli</u></b>. "On the minimum strength of (unobserved) covariates to overturn an insignificant result." 
-                <br>
-                [<a href="#insig-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
-                [<a href =  "files/Tsao,%20Perry%20and%20Cinelli%20-%20On%20the%20minimal%20strength%20to%20overturn%20insignificance.pdf"  target="_blank">&nbsp;draft&nbsp;</a>]
-                <div id="insig-abstract" class = "collapse"><br>
-                <div class="well"> 
-                    We study conditions under which the addition of variables to a regression equation can turn a previously statistically insignificant result into a significant one. Specifically, we characterize the minimum strength of association required for these variables—both with the dependent and independent variables, or with the dependent variable alone—to elevate the observed t-statistic above a specified significance threshold. Interestingly, we show that it is considerably difficult to overturn a statistically insignificant result solely by reducing the standard error. Instead, included variables must also alter the point estimate to achieve such reversals in practice. Our results can be used for sensitivity analysis and for bounding the extent of p-hacking, and may also offer algebraic explanations for patterns of reversals seen in empirical research, such as those documented by Lenz and Sahn (2021).
-                </div></div>
-                
-            
-            </li>
-            
-            <br>
-            
             
 
-            
-            <li>
-                Victor Chernozhukov, <b><u>Carlos Cinelli</u></b>, Whitney Newey, Amit Sharma, and Vasilis Syrgkanis. "Long Story Short: Omitted Variable Bias in Causal Machine Learning." 
-                <br>
-                <b class="text-danger">(best paper award SBE 2024)</b>
-                <br>
-                [<a href="#ovb4ml-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
-                [<a href = "files/Chernozhukov%20et%20al%20-%20OVB%20for%20ML.pdf" target="_blank">&nbsp;draft&nbsp;</a>]
-                [<a href = "https://www.nber.org/system/files/working_papers/w30302/w30302.pdf" target="_blank">&nbsp;nber&nbsp;</a>]
-                [<a href="https://github.com/carloscinelli/dml.sensemakr" target="_blank">&nbsp;r&nbsp;package&nbsp;</a>]
-                [<a href="https://docs.doubleml.org/stable/guide/sensitivity.html" target="_blank">&nbsp;python&nbsp;package&nbsp;</a>]
-                [<a href="https://www.youtube.com/watch?v=1RZz1gLse7s" target="_blank">&nbsp;video&nbsp;1&nbsp;</a>]
-                [<a href="https://neurips.cc/virtual/2021/workshop/21871" target="_blank">&nbsp;video&nbsp;2&nbsp;</a>]
-                [<a href="https://www.youtube.com/watch?v=IPcfCDESP5E" target="_blank">&nbsp;video&nbsp;3&nbsp;</a>]
-                
-                
-<!--
-                [<a href="#iv_sensitivity" data-toggle="collapse" >&nbsp;preprint&nbsp;</a>]
-                <div id="iv_sensitivity" class = "collapse"><br>
-                <div class="well">Preprint under request.</div></div>
--->
-                <div id="ovb4ml-abstract" class = "collapse"><br>
-                <div class="well"> We derive general, yet simple, sharp bounds on the size of the omitted variable bias for a broad class of causal parameters that can be identified as linear functionals of the conditional expectation function of the outcome. Such functionals encompass many of the traditional targets of investigation in causal inference studies, such as, for example, (weighted) average of potential outcomes, average treatment effects (including subgroup effects, such as the effect on the treated), (weighted) average derivatives, and policy effects from shifts in covariate distribution--all for general, nonparametric causal models. Our construction relies on the Riesz-Frechet representation of the target functional. Specifically, we show how the bound on the bias depends only on the additional variation that the latent variables create both in the outcome and in the Riesz representer for the parameter of interest. Moreover, in many important cases (e.g, average treatment effects and avearage derivatives) the bound is shown to depend on easily interpretable quantities that measure the explanatory power of the omitted variables. Therefore, simple plausibility judgments on the maximum explanatory power of omitted variables (in explaining treatment and outcome variation) are sufficient to place overall bounds on the size of the bias. Furthermore, we use debiased machine learning to provide flexible and efficient statistical inference on learnable components of the bounds. Finally, empirical examples demonstrate the usefulness of the approach.
-                    </div></div>
-                
-            
-            </li>
-            
-            
-            
-            <br>        
+    
 
 
 
@@ -133,6 +97,45 @@
         </h3>
         <br>
         <ol reversed>
+                        
+            <li>
+                Victor Chernozhukov, <b><u>Carlos Cinelli</u></b>, Whitney Newey, Amit Sharma, and Vasilis Syrgkanis (2026). "Long Story Short: Omitted Variable Bias in Causal Machine Learning." <b>Review of Economic and Statistics</b>
+                <br>
+                <b class="text-danger">(best paper award SBE 2024)</b>
+                <br>
+                [<a href="#ovb4ml-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+                [<a href = "files/Chernozhukov%20et%20al%20-%20OVB%20for%20ML.pdf" target="_blank">&nbsp;draft&nbsp;</a>]
+                [<a href = "https://www.nber.org/system/files/working_papers/w30302/w30302.pdf" target="_blank">&nbsp;nber&nbsp;</a>]
+                [<a href = "https://direct.mit.edu/rest/article/doi/10.1162/REST.a.1705/135203/Long-Story-Short-Omitted-Variable-Bias-in-Causal" target="_blank">&nbsp;journal&nbsp;</a>]
+                [<a href="https://github.com/carloscinelli/dml.sensemakr" target="_blank">&nbsp;r&nbsp;package&nbsp;</a>]
+                [<a href="https://docs.doubleml.org/stable/guide/sensitivity.html" target="_blank">&nbsp;python&nbsp;package&nbsp;</a>]
+                [<a href="https://www.youtube.com/watch?v=1RZz1gLse7s" target="_blank">&nbsp;video&nbsp;1&nbsp;</a>]
+                [<a href="https://neurips.cc/virtual/2021/workshop/21871" target="_blank">&nbsp;video&nbsp;2&nbsp;</a>]
+                [<a href="https://www.youtube.com/watch?v=IPcfCDESP5E" target="_blank">&nbsp;video&nbsp;3&nbsp;</a>]
+                <div id="ovb4ml-abstract" class = "collapse"><br>
+                <div class="well"> 
+                    We develop a general theory of omitted variable bias for a wide range of common causal parameters, including (but not limited to) averages of potential outcomes, average treatment effects, average causal derivatives, and policy effects from covariate shifts. Our theory applies to nonparametric models, while naturally allowing for (semi-)parametric restrictions (such as partial linearity) when such assumptions are made. We show how simple plausibility judgments on the maximum explanatory power of omitted variables are sufficient to bound the magnitude of the bias, thus facilitating sensitivity analysis in otherwise complex, nonlinear models. Finally, we provide flexible and efficient statistical inference methods, which can leverage modern machine learning algorithms for estimation. These results allow empirical researchers to perform sensitivity analyses in a flexible class of machine-learned causal models using very simple, and interpretable, tools. Empirical examples demonstrate the utility of our approach.
+                    </div></div>
+            </li>
+            <br>    
+            
+                <li>
+                Danielle Tsao, Ronan Perry and <b><u>Carlos Cinelli</u></b> (2026). "On the minimum strength of (unobserved) covariates to overturn an insignificant result." 
+                <b>Statistical Science</b>.
+                <br>
+                [<a href="#insig-abstract" data-toggle="collapse" >&nbsp;abstract&nbsp;</a>]
+                [<a href =  "files/Tsao,%20Perry%20and%20Cinelli%20-%20On%20the%20minimal%20strength%20to%20overturn%20insignificance.pdf"  target="_blank">&nbsp;draft&nbsp;</a>]
+                [<a href =  "https://www.e-publications.org/ims/submission/STS/user/submissionFile/66327?confirm=fdd51120"  target="_blank">&nbsp;journal&nbsp;</a>]
+                <div id="insig-abstract" class = "collapse"><br>
+                
+                <div class="well"> 
+                    We study conditions under which the addition of variables to a regression equation can turn a previously statistically insignificant result into a significant one. Specifically, we characterize the minimum strength of association required for these variables—both with the dependent and independent variables, or with the dependent variable alone—to elevate the observed t-statistic above a specified significance threshold. Interestingly, we show that it is considerably difficult to overturn a statistically insignificant result solely by reducing the standard error. Instead, included variables must also alter the point estimate to achieve such reversals in practice. Our results can be used for sensitivity analysis and for bounding the extent of p-hacking, and may also offer algebraic explanations for patterns of reversals seen in empirical research, such as those documented by Lenz and Sahn (2021).
+                </div></div>
+                
+            
+            </li>
+            
+            <br>
                 <li>
                 Nicholas J. Irons and <b><u>Carlos Cinelli</u></b> (2025). "Causally Sound Priors for Binary Experiments." <b>Bayesian Analysis</b>.
                 <br>
