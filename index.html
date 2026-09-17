@@ -16,26 +16,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/site.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     </head>
 
+    <body>
+
 
     <!--MENU-->
 
     <div class="container">
-        <h1 style="font-variant:small-caps" align="center"><b>Carlos Cinelli</b></h1>
+        <h1 style="font-variant:small-caps" class="text-center"><b>Carlos Cinelli</b></h1>
 <!--        <hr width= 50%>-->
-        <center> 
-            [<a href = "index.html" class="text-danger" style="font-variant:small-caps">&nbsp;home&nbsp;</a>] 
+        <nav class="text-center" aria-label="Main navigation">
+            [<a href = "index.html" class="text-danger" style="font-variant:small-caps" aria-current="page">&nbsp;home&nbsp;</a>]
             [<a href = "publications.html" style="font-variant:small-caps">&nbsp;research&nbsp;</a>]
             [<a href = "software.html" style="font-variant:small-caps">&nbsp;software&nbsp;</a>]
             [<a href = "people.html" style="font-variant:small-caps">&nbsp;students&nbsp;</a>]
             [<a href = "files/cinelli_cv.pdf" target="_blank" style="font-variant:small-caps">&nbsp;cv&nbsp;</a>]
-<!--        </center>-->
+        </nav>
     </div>
-    <hr width= 50%>
+    <hr style="width: 50%">
 
 
     <!--    BODY   -->
@@ -46,104 +49,102 @@
 
         <div class="row">
             <div class="col-sm-3">
-                <div class="circle-avatar" style="background-image:url(img/pic.jpg)"></div>
-                <!--                <img src="img/pic.jpg" class="circular-square" align="center"\>-->
+                <img class="circle-avatar" src="img/pic.jpg" alt="Carlos Cinelli" width="200" height="200">
             </div>
             <div class="col-sm-9">
-                <h3 style="font-variant:small-caps" align = "left">
+                <h3 style="font-variant:small-caps" class="text-left">
                     About
                 </h3>
                 
-                <p align="justify"> 
+                <p class="text-justify">
                     <!--            My methodological research focuses in  Statistics and Causal Inference. Real world data is marred by several biases, and -->
-                    I am an assistant professor at the <a href="https://stat.uw.edu/", target="_blank"> <b class="text-danger">Department of Statistics at the University of Washington.</b> </a> I am also a data science fellow in the <a href="https://escience.washington.edu/", target="_blank"><b class="text-danger">eScience Institute,</b></a> and affiliate faculty of the <a href="https://csss.uw.edu/", target="_blank"> <b class="text-danger">Center for Statistics and the Social Sciences.</b> </a>
-                    I obtained my Ph.D. in Statistics at the University of California, Los Angeles, advised by <a href="https://www.chadhazlett.com/", target="_blank"><b class="text-danger">Chad Hazlett</b> </a> and <a href="http://bayes.cs.ucla.edu/csl_papers.html", target="_blank"> <b class="text-danger">Judea Pearl.</b></a>
+                    I am an assistant professor at the <a href="https://stat.uw.edu/" target="_blank"> <b class="text-danger">Department of Statistics at the University of Washington.</b> </a> I am also a data science fellow in the <a href="https://escience.washington.edu/" target="_blank"><b class="text-danger">eScience Institute,</b></a> and affiliate faculty of the <a href="https://csss.uw.edu/" target="_blank"> <b class="text-danger">Center for Statistics and the Social Sciences.</b> </a>
+                    I obtained my Ph.D. in Statistics at the University of California, Los Angeles, advised by <a href="https://www.chadhazlett.com/" target="_blank"><b class="text-danger">Chad Hazlett</b> </a> and <a href="http://bayes.cs.ucla.edu/csl_papers.html" target="_blank"> <b class="text-danger">Judea Pearl.</b></a>
                     
                     <br><br>
 <!--                    Prior to UCLA, I worked as an Economist for the Central Bank of Brazil (2012-2016).-->
                     My <a href = "publications.html"><b class="text-danger">research</b></a> focuses on developing new causal and statistical methods for <i>transparent</i> and  <i>robust</i> causal claims in the empirical sciences.  I am particularly interested in the inferential challenges  faced by social and health scientists, as well as the intersections of causality with machine learning and artificial intelligence. 
                     <br><br> 
-                   
-                    
+                </p>
             </div>
         </div>
         <!--        <hr width= 100%>-->
-        <h3 style="font-variant:small-caps" align="left">
+        <h3 style="font-variant:small-caps" class="text-left">
             News
         </h3>
 
         <ul>
              <!-- Recent News -->
                 <li>
-                New <a href="files/Wang%20et%20al%20-%20OVB%20for%20DiD.pdf", target="_blank"><b class="text-danger">working paper</b></a>, <i>Omitted Variable Bias in Difference-in-Differences Designs</i> (with Juejue Wang, Pedro Sant'Anna and Victor Chernozhukov). 
+                New <a href="files/Wang%20et%20al%20-%20OVB%20for%20DiD.pdf" target="_blank"><b class="text-danger">working paper</b></a>, <i>Omitted Variable Bias in Difference-in-Differences Designs</i> (with Juejue Wang, Pedro Sant'Anna and Victor Chernozhukov).
             </li>
             <li>
-                Paper accepted in the <a href = "https://direct.mit.edu/rest/article/doi/10.1162/REST.a.1705/135203/Long-Story-Short-Omitted-Variable-Bias-in-Causal", target="_blank"> <b class = "text-danger"> Review of Economics and Statistics,</b></a> <i>Long Story Short: Omitted Variable Bias in Causal Machine Learning.</i> (with V. Chernozhukov, W. K. Newey, A. Sharma, and V. Syrgkanis).
+                Paper accepted in the <a href = "https://direct.mit.edu/rest/article/doi/10.1162/REST.a.1705/135203/Long-Story-Short-Omitted-Variable-Bias-in-Causal" target="_blank"> <b class = "text-danger"> Review of Economics and Statistics,</b></a> <i>Long Story Short: Omitted Variable Bias in Causal Machine Learning.</i> (with V. Chernozhukov, W. K. Newey, A. Sharma, and V. Syrgkanis).
             </li>
             <li>
-                Paper accepted in <a href="files/Tsao,%20Perry%20and%20Cinelli%20-%20On%20the%20minimal%20strength%20to%20overturn%20insignificance.pdf", target="_blank"><b class="text-danger"> Statistical Science,</b></a> <i>On the minimum strength of (unobserved) covariates to overturn an insignificant result.</i> (with Danielle Tsao and Ronan Perry). 
+                Paper accepted in <a href="files/Tsao,%20Perry%20and%20Cinelli%20-%20On%20the%20minimal%20strength%20to%20overturn%20insignificance.pdf" target="_blank"><b class="text-danger"> Statistical Science,</b></a> <i>On the minimum strength of (unobserved) covariates to overturn an insignificant result.</i> (with Danielle Tsao and Ronan Perry).
             </li>
             <li>
-                The recording of <a href="https://www.youtube.com/watch?v=1RZz1gLse7s", target="_blank"> <b class="text-danger">my talk for the Online Causal Inference Seminar </b></a> is now available on YouTube.
+                The recording of <a href="https://www.youtube.com/watch?v=1RZz1gLse7s" target="_blank"> <b class="text-danger">my talk for the Online Causal Inference Seminar </b></a> is now available on YouTube.
             </li>
             <li>
-                New <a href="files/Cinelli%20et%20al%20-%20challenges.pdf", target="_blank"><b class="text-danger">working paper</b></a>, <i>A Dozen Challenges in Causality and Causal Inference</i> (with A. Feller, G. Imbens, E. Kennedy, S. Magliacane and J. Zubizarreta). 
+                New <a href="files/Cinelli%20et%20al%20-%20challenges.pdf" target="_blank"><b class="text-danger">working paper</b></a>, <i>A Dozen Challenges in Causality and Causal Inference</i> (with A. Feller, G. Imbens, E. Kennedy, S. Magliacane and J. Zubizarreta).
             </li>
             <li>
-                Paper accepted in <a href="files/Irons%20and%20Cinelli%20-%20Causally%20Sound%20Priors.pdf", target="_blank"><b class="text-danger"> Bayesian Analysis,</b></a> <i>Causally Sound Priors for Binary Experiments</i> (with Nicholas Irons). 
+                Paper accepted in <a href="files/Irons%20and%20Cinelli%20-%20Causally%20Sound%20Priors.pdf" target="_blank"><b class="text-danger"> Bayesian Analysis,</b></a> <i>Causally Sound Priors for Binary Experiments</i> (with Nicholas Irons).
             </li>
              <li>
                 Our paper <a href="files/Chernozhukov%20et%20al%20-%20OVB%20for%20ML.pdf" target="_blank"> <b class="text-danger">"Long Story Short: Omitted Variable Bias in Causal Machine Learning"</b></a>  received the best paper award at SBE 2024 in Econometrics.
             </li>
              <li>
-                Paper accepted in <a href="files/Cinelli%20and%20Hazlett%20-%20OVB%20for%20IV.pdf", target="_blank"><b class="text-danger"> Biometrika,</b></a> <i>An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables</i> (with Chad Hazlett). 
+                Paper accepted in <a href="files/Cinelli%20and%20Hazlett%20-%20OVB%20for%20IV.pdf" target="_blank"><b class="text-danger"> Biometrika,</b></a> <i>An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables</i> (with Chad Hazlett).
             </li>
             <li>
-                The recording of <a href="https://vimeo.com/1021045983", target="_blank"> <b class="text-danger">my talk for the National Academies</b></a> is now available online.
+                The recording of <a href="https://vimeo.com/1021045983" target="_blank"> <b class="text-danger">my talk for the National Academies</b></a> is now available online.
             </li>
             <li>
-                Paper accepted in <a href="files/Cinelli%20et%20al%20-%20sensemakr.pdf", target="_blank"><b class="text-danger"> Observational Studies,</b></a> <i>sensemakr: Sensitivity Analysis Tools for OLS in R and Stata</i> (with Jeremy Ferwerda and Chad Hazlett). 
+                Paper accepted in <a href="files/Cinelli%20et%20al%20-%20sensemakr.pdf" target="_blank"><b class="text-danger"> Observational Studies,</b></a> <i>sensemakr: Sensitivity Analysis Tools for OLS in R and Stata</i> (with Jeremy Ferwerda and Chad Hazlett).
             </li>
-           <li> Congratulations to <a href="https://njirons.github.io/", target="_blank"><b class="text-danger">Nick Irons</b> </a> on successfully defending his PhD dissertation!
+           <li> Congratulations to <a href="https://njirons.github.io/" target="_blank"><b class="text-danger">Nick Irons</b> </a> on successfully defending his PhD dissertation!
             </li>
     
-            <li> New <a href="files/Tsao,%20Perry%20and%20Cinelli%20-%20On%20the%20minimal%20strength%20to%20overturn%20insignificance.pdf", target="_blank"><b class="text-danger">working paper,</b></a> <i>On the minimum strength of (unobserved) covariates to overturn an insignificant result</i> (with Danielle Tsao and Ronan Perry). 
+            <li> New <a href="files/Tsao,%20Perry%20and%20Cinelli%20-%20On%20the%20minimal%20strength%20to%20overturn%20insignificance.pdf" target="_blank"><b class="text-danger">working paper,</b></a> <i>On the minimum strength of (unobserved) covariates to overturn an insignificant result</i> (with Danielle Tsao and Ronan Perry).
             </li>
             <li> 
-                I am thankful to the  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2417955&HistoricalAwards=false", target="_blank"><b class="text-danger">NSF/MMS</b></a> for supporting our work. 
+                I am thankful to the  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2417955&amp;HistoricalAwards=false" target="_blank"><b class="text-danger">NSF/MMS</b></a> for supporting our work.
             </li>
             <li> 
-                I am thankful to the  <a href="https://stat.uw.edu/news-resources/articles/cinelli-receives-royalty-research-fund-rrf-award", target="_blank"><b class="text-danger">Royalty Research Fund</b></a> for supporting our work. 
+                I am thankful to the  <a href="https://stat.uw.edu/news-resources/articles/cinelli-receives-royalty-research-fund-rrf-award" target="_blank"><b class="text-danger">Royalty Research Fund</b></a> for supporting our work.
             </li>
            <li> 
-                Submissions for the  <a href="https://sci-info.org/annual-meeting/", target="_blank"><b class="text-danger">2024 American Causal Inference Conference</b></a> are now open. 
+                Submissions for the  <a href="https://sci-info.org/annual-meeting/" target="_blank"><b class="text-danger">2024 American Causal Inference Conference</b></a> are now open.
             </li>
             <li> 
-                Consider attending the  <a href="http://interactivecausallearning.com/2023/", target="_blank"><b class="text-danger">2023 Interactive Causal Learning Conference</b></a> in Boca Raton, Florida.
+                Consider attending the  <a href="http://interactivecausallearning.com/2023/" target="_blank"><b class="text-danger">2023 Interactive Causal Learning Conference</b></a> in Boca Raton, Florida.
             </li>
-            <li> New <a href="files/Irons%20and%20Cinelli%20-%20Causally%20Sound%20Priors.pdf", target="_blank"><b class="text-danger">working paper,</b></a> <i>Causally Sound Priors for Binary Experiments</i> (with Nicholas J. Irons). 
+            <li> New <a href="files/Irons%20and%20Cinelli%20-%20Causally%20Sound%20Priors.pdf" target="_blank"><b class="text-danger">working paper,</b></a> <i>Causally Sound Priors for Binary Experiments</i> (with Nicholas J. Irons).
             </li>
                         
             <li> 
-                Consider attending our short course on Causal Directed Acyclic Graphs at the <a href="https://connect.apsanet.org/apsa2023/pre-conference-short-courses/", target="_blank"><b class="text-danger">APSA 2023.</b></a>
+                Consider attending our short course on Causal Directed Acyclic Graphs at the <a href="https://connect.apsanet.org/apsa2023/pre-conference-short-courses/" target="_blank"><b class="text-danger">APSA 2023.</b></a>
             </li>
 
             
-            <li> New <a href="https://www.nber.org/papers/w30302", target="_blank"><b class="text-danger">working paper on NBER,</b></a> <i>Long Story Short: Omitted Variable Bias in Causal Machine Learning</i> (with V. Chernozhukov, W. K. Newey, A. Sharma, and V. Syrgkanis). 
+            <li> New <a href="https://www.nber.org/papers/w30302" target="_blank"><b class="text-danger">working paper on NBER,</b></a> <i>Long Story Short: Omitted Variable Bias in Causal Machine Learning</i> (with V. Chernozhukov, W. K. Newey, A. Sharma, and V. Syrgkanis).
             </li>
             
             <li>
                  The videos of the  <a href="http://interactivecausallearning.com/2022/" target="_blank"><b class="text-danger">2022 Interactive Causal Learning Conference</b></a> are now available online.
             </li>
             <li>
-                Paper accepted in <a href="https://proceedings.mlr.press/v178/liu22g.html", target="_blank"><b class="text-danger">Colt 2022,</b></a> <i>Orthogonal Statistical Learning with Self-Concordant Loss</i> (with Lang Liu and Zaid Harchaoui). 
+                Paper accepted in <a href="https://proceedings.mlr.press/v178/liu22g.html" target="_blank"><b class="text-danger">Colt 2022,</b></a> <i>Orthogonal Statistical Learning with Self-Concordant Loss</i> (with Lang Liu and Zaid Harchaoui).
             </li>
             
             <li>
-                Paper accepted in <a href="files/Cinelli%20et%20al%20-%20A%20Crash%20Course%20in%20Good%20and%20Bad%20Controls.pdf", target="_blank"><b class="text-danger">Sociological Methods and Research,</b></a> <i>A Crash Course in Good and Bad Controls</i> (with Andrew Forney and Judea Pearl). 
+                Paper accepted in <a href="files/Cinelli%20et%20al%20-%20A%20Crash%20Course%20in%20Good%20and%20Bad%20Controls.pdf" target="_blank"><b class="text-danger">Sociological Methods and Research,</b></a> <i>A Crash Course in Good and Bad Controls</i> (with Andrew Forney and Judea Pearl).
             </li>
             <li>
-                Paper accepted in <a href="https://www.nature.com/articles/s41467-022-28553-9", target="_blank"><b class="text-danger">Nature Communications,</b></a> <i>Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy</i> (with N. LaPierre, B. Hill, S. Sankararaman, and E. Eskin). 
+                Paper accepted in <a href="https://www.nature.com/articles/s41467-022-28553-9" target="_blank"><b class="text-danger">Nature Communications,</b></a> <i>Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy</i> (with N. LaPierre, B. Hill, S. Sankararaman, and E. Eskin).
             </li>
             
             <li>
@@ -152,36 +153,38 @@
 
 
             <li> 
-                I'm joining the Editorial Board of the <a href="https://www.degruyter.com/journal/key/jci/html?lang=en", target="_blank"><b class="text-danger">Journal of Causal Inference (JCI).</b></a> Consider submitting your work.
+                I'm joining the Editorial Board of the <a href="https://www.degruyter.com/journal/key/jci/html?lang=en" target="_blank"><b class="text-danger">Journal of Causal Inference (JCI).</b></a> Consider submitting your work.
             </li>
             
             <li>
-                The recording of <a href="https://www.youtube.com/watch?v=j7mN_G5Gpyg", target="_blank"> <b class="text-danger">my talk for the Online Causal Inference Seminar </b></a> is now available on YouTube.
+                The recording of <a href="https://www.youtube.com/watch?v=j7mN_G5Gpyg" target="_blank"> <b class="text-danger">my talk for the Online Causal Inference Seminar </b></a> is now available on YouTube.
             </li>
-            <!-- Button to Toggle Old News -->
-    <button class="btn btn-link text-danger" type="button" data-toggle="collapse" data-target="#oldNews" aria-expanded="false" aria-controls="oldNews">
-        Show more news.
-    </button>
-            <div id="oldNews" class="collapse">
+        </ul>
+
+        <!-- Button to Toggle Old News -->
+        <button class="btn btn-link text-danger" type="button" data-toggle="collapse" data-target="#oldNews" aria-expanded="false" aria-controls="oldNews">
+            Show more news.
+        </button>
+        <ul id="oldNews" class="collapse">
             <li>
                  I am <i>actively looking for students</i> with strong interests in causal inference. Please feel free to reach out! 
             </li>
             <li>
-                Other researchers and I <a href="https://www.bbc.com/portuguese/brasil-58007138", target="_blank"><b class="text-danger">talked to BBC Brazil</b></a> about the (mis)use of Benford's Law for fraud detection in elections (in Portuguese).
+                Other researchers and I <a href="https://www.bbc.com/portuguese/brasil-58007138" target="_blank"><b class="text-danger">talked to BBC Brazil</b></a> about the (mis)use of Benford's Law for fraud detection in elections (in Portuguese).
             </li>
-            <li> Watch our video recorded for <a href="https://jsm2021.pathable.co/meetings/virtual/WpMi9JW9e3wC4ysZD", target="_blank"><b class="text-danger">JSM 2021</b></a>, <i>Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy.</i>
-            </li>
-            
-            <li> I will join the <a href="https://stat.uw.edu/", target="_blank"> <b class="text-danger">Department of Statistics at the University of Washington </b> </a> as an assistant professor starting this Fall 2021.
+            <li> Watch our video recorded for <a href="https://jsm2021.pathable.co/meetings/virtual/WpMi9JW9e3wC4ysZD" target="_blank"><b class="text-danger">JSM 2021</b></a>, <i>Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy.</i>
             </li>
             
-            <li> Paper accepted in <a href="https://ftp.cs.ucla.edu/pub/stat_ser/r504.pdf", target="_blank"><b class="text-danger">AISTATS 2021</b></a>, <i>Exploiting Equality Constraints in Causal Inference</i>
+            <li> I will join the <a href="https://stat.uw.edu/" target="_blank"> <b class="text-danger">Department of Statistics at the University of Washington </b> </a> as an assistant professor starting this Fall 2021.
+            </li>
+            
+            <li> Paper accepted in <a href="https://ftp.cs.ucla.edu/pub/stat_ser/r504.pdf" target="_blank"><b class="text-danger">AISTATS 2021</b></a>, <i>Exploiting Equality Constraints in Causal Inference</i>
             (with Chi Zhang, Bryant Chen and Judea Pearl).</li> 
             
-            <li> New <a href="https://doi.org/10.1101/2020.10.21.347773", target="_blank"><b class="text-danger">preprint on bioRxiv,</b></a> <i>Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy.</i>
+            <li> New <a href="https://doi.org/10.1101/2020.10.21.347773" target="_blank"><b class="text-danger">preprint on bioRxiv,</b></a> <i>Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy.</i>
             </li>
            
-            <li> Paper accepted in <a href="files/Cinelli%20and%20Pearl%20-%20Generalizing%20Experimental%20Results.pdf", target="_blank"><b class="text-danger">European Journal of Epidemiology,</b></a> <i>Generalizing Experimental Results by Leveraging Knowledge of Mechanisms</i> (with Judea Pearl). 
+            <li> Paper accepted in <a href="files/Cinelli%20and%20Pearl%20-%20Generalizing%20Experimental%20Results.pdf" target="_blank"><b class="text-danger">European Journal of Epidemiology,</b></a> <i>Generalizing Experimental Results by Leveraging Knowledge of Mechanisms</i> (with Judea Pearl).
             </li>
             
            <li> Watch our video recorded for <a href="https://www.youtube.com/watch?v=0b5VYWh8fN4" target="_blank"><b class="text-danger">JSM 2020,</b> </a> <i>An Omitted Variable Bias Framework for Sensitivity   Analysis of Instrumental Variables.</i> 
@@ -216,7 +219,6 @@
             <li>
                 Paper accepted in <a href= "http://proceedings.mlr.press/v97/cinelli19a/cinelli19a.pdf" target="_blank"><b class="text-danger">ICML-2019</b></a>, <i>Sensitivity Analysis of Linear Structural Causal Models.</i> 
             </li>
-            </div>
         </ul>
 
 
@@ -242,19 +244,19 @@
 
 
     <!--FOOTER-->
-    <hr width= 50%>
+    <hr style="width: 50%">
     <footer>
 
-        <center> 
+        <nav class="text-center" aria-label="Social links">
 
             [<a href = "https://github.com/carloscinelli" target="_blank" style="font-variant:small-caps">&nbsp;github&nbsp;</a>] 
 
-            [<a href = "https://scholar.google.com/citations?user=4fyZLIoAAAAJ&hl=en" target="_blank" style="font-variant:small-caps">&nbsp;google&nbsp;scholar&nbsp;</a>] 
+            [<a href = "https://scholar.google.com/citations?user=4fyZLIoAAAAJ&amp;hl=en" target="_blank" style="font-variant:small-caps">&nbsp;google&nbsp;scholar&nbsp;</a>]
 
             [<a href = "https://twitter.com/analisereal" target="_blank" style="font-variant:small-caps">&nbsp;twitter&nbsp;</a>] 
 
-        </center>  
+        </nav>
         <br>
     </footer>
-
+    </body>
 </html>

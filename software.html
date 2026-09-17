@@ -13,30 +13,33 @@
   gtag('config', 'UA-158095434-1');
 </script>
 
-        <title>Carlos Cinelli</title>
+        <title>Software | Carlos Cinelli</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/site.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     </head>
 
+    <body>
+
 
     <!--MENU-->
 
     <div class="container">
-        <h1 style="font-variant:small-caps" align="center"><b>Carlos Cinelli</b></h1>
+        <h1 style="font-variant:small-caps" class="text-center"><b>Carlos Cinelli</b></h1>
 <!--        <hr width= 50%>-->
-        <center> 
+        <nav class="text-center" aria-label="Main navigation">
             [<a href = "index.html" style="font-variant:small-caps">&nbsp;home&nbsp;</a>] 
             [<a href = "publications.html" style="font-variant:small-caps">&nbsp;research&nbsp;</a>]
-            [<a href = "software.html" class="text-danger"  style="font-variant:small-caps">&nbsp;software&nbsp;</a>]
+            [<a href = "software.html" class="text-danger"  style="font-variant:small-caps" aria-current="page">&nbsp;software&nbsp;</a>]
             [<a href = "people.html" style="font-variant:small-caps">&nbsp;students&nbsp;</a>]
             [<a href = "files/cinelli_cv.pdf" target="_blank" style="font-variant:small-caps">&nbsp;cv&nbsp;</a>]
-<!--        </center>-->
+        </nav>
     </div>
-    <hr width= 50%>
+    <hr style="width: 50%">
 
 
     <!--    BODY   -->
@@ -44,7 +47,7 @@
 
     <div class="container">
        
-          <p align="center" >See also my <a href="https://github.com/carloscinelli" target="_blank">GitHub page</a>.
+          <p class="text-center" >See also my <a href="https://github.com/carloscinelli" target="_blank">GitHub page</a>.</p>
 
 
             <h3 style="font-variant:small-caps">     
@@ -53,12 +56,12 @@
             <!--           </center> -->
         </h3>
         
-        <ul>
+        <ul class="spaced-list">
             <li> Regression Sensitivity Analysis: the Robustness Value and the partial R2
                   <br>  
-                    [<a href="#shiny-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#shiny-desc" aria-expanded="false" aria-controls="shiny-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "https://carloscinelli.shinyapps.io/robustness_value/" target="_blank">&nbsp;app&nbsp;</a>]
-             </li>
+
              <div id="shiny-desc" class = "collapse"><br>
                 <div class="well">
                     The web app <a href = "https://carloscinelli.shinyapps.io/robustness_value/" target="_blank"> "Regression Sensitivity Analysis: the Robustness Value and the Partial R2"</a> makes 
@@ -66,7 +69,8 @@
                     This web app allows researchers to examine how sensitive their regression estimates are to the inclusion of unobserved confounders, as well as bounding the strength of unobserved confounders based on comparisons to observed covariates. To perform these analyses, the user only needs to provide summary statistics already found in standard regression tables. These results do not rely on any assumptions regarding the functional form of the treatment assignment mechanism nor on the distribution of the unobserved confounders, and hold for multiple confounders, possibly acting non-linearly.  For details, please see <a href="https://doi.org/10.1111/rssb.12348" target="_blank">Cinelli and Hazlett (2020)</a>.
                  </div>
              </div>
-            <br>
+            </li>
+
         </ul>
         
         <h3 style="font-variant:small-caps">     
@@ -75,32 +79,34 @@
             <!--           </center> -->
         </h3>
         
-        <ul>
+        <ul class="spaced-list">
             <li>sensemakr: Sensitivity Analysis Tools for OLS (stata)
                 <br>  
-                    [<a href="#sensemakr-stata-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#sensemakr-stata-desc" aria-expanded="false" aria-controls="sensemakr-stata-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "https://www.researchgate.net/publication/340965014_sensemakr_Sensitivity_Analysis_Tools_for_OLS_in_R_and_Stata" target="_blank">&nbsp;software&nbsp;paper&nbsp;</a>]
                     [<a href = "https://github.com/resonance1/sensemakr-stata" target="_blank">&nbsp;github&nbsp;</a>]
                     [<a href = "https://ideas.repec.org/c/boc/bocode/s458773.html" target="_blank">&nbsp;ssc&nbsp;</a>]
-            </li>
+
             <div id="sensemakr-stata-desc" class = "collapse"><br>
                 <div class="well">
                     The stata module <a href="https://ideas.repec.org/c/boc/bocode/s458773.html" target="_blank">sensemakr </a>   implements a suite of sensitivity analysis tools that extends the traditional omitted variable bias framework and makes it easier to understand the impact of omitted variables in regression models, as discussed in <a href="https://doi.org/10.1111/rssb.12348" target="_blank">Cinelli and Hazlett (2020)</a>.
                  </div>
              </div>
+            </li>
         </ul>
         
-                <ul>
+                <ul class="spaced-list">
             <li>iv.sensemakr: Sensitivity Analysis Tools for Instrumental Variables (stata)
                 <br>  
-                    [<a href="#iv-sensemakr-stata-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#iv-sensemakr-stata-desc" aria-expanded="false" aria-controls="iv-sensemakr-stata-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "https://github.com/carloscinelli/iv.sensemakr-stata" target="_blank">&nbsp;github&nbsp;</a>]
-            </li>
+
             <div id="iv-sensemakr-stata-desc" class = "collapse"><br>
                 <div class="well">
                     The stata module iv.sensemakr implements a suite of sensitivity analysis tools for instrumental variable estimates as discussed in <a href="files/Cinelli%20and%20Hazlett%20(2020)%20-%20OVB%20for%20IV.pdf">Cinelli and Hazlett. "An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables"</a>.
                  </div>
              </div>
+            </li>
         </ul>
         
         <h3 style="font-variant:small-caps">     
@@ -108,7 +114,7 @@
             Python packages
             <!--           </center> -->
         </h3>
-        <ul>
+        <ul class="spaced-list">
             <li> sensemakr: Sensitivity Analysis Tools for OLS (Python)
                 <br>
                  [<a href = "https://github.com/nlapier2/PySensemakr" target="_blank">&nbsp;github&nbsp;</a>]
@@ -121,117 +127,125 @@
             <!--           </center> -->
         </h3>
         
-         <ul>
+         <ul class="spaced-list">
              
              <li> iv.sensemakr: Sensitivity Analysis Tools for Instrumental Variables
                   <br>  
-                    [<a href="#iv-sensemakr-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#iv-sensemakr-desc" aria-expanded="false" aria-controls="iv-sensemakr-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "files/Cinelli%20and%20Hazlett%20(2020)%20-%20OVB%20for%20IV.pdf" target="_blank">&nbsp;theory&nbsp;paper&nbsp;</a>]
                     [<a href = "https://github.com/carloscinelli/iv.sensemakr" target="_blank">&nbsp;github&nbsp;</a>]
-             </li> 
+
              <div id="iv-sensemakr-desc" class = "collapse"><br>
                 <div class="well">
                     The R package iv.sensemakr implements a suite of sensitivity analysis tools for instrumental variable estimates as discussed in <a href="files/Cinelli%20and%20Hazlett%20(2020)%20-%20OVB%20for%20IV.pdf">Cinelli and Hazlett. "An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables".</a> 
                  </div>
              </div>
-             <br>
+            </li>
+
              
              <li> dml.sensemakr: Sensitivity Analysis Tools for Causal Machine Learning
                   <br>  
-                    [<a href="#dml-sensemakr-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#dml-sensemakr-desc" aria-expanded="false" aria-controls="dml-sensemakr-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "https://carloscinelli.com/files/Chernozhukov%20et%20al%20(2021)%20-%20OVB%20for%20ML.pdf" target="_blank">&nbsp;theory&nbsp;paper&nbsp;</a>]
                     [<a href = "http://carloscinelli.com/dml.sensemakr/" target="_blank">&nbsp;webpage&nbsp;</a>]
                     [<a href = "https://github.com/carloscinelli/dml.sensemakr" target="_blank">&nbsp;github&nbsp;</a>]
-             </li>
+
              <div id="dml-sensemakr-desc" class = "collapse"><br>
                 <div class="well">
                     The R package dml.sensemakr implements a general suite of sensitivity analysis tools for Causal Machine Learning as discussed in <a href="https://www.nber.org/papers/w30302">Chernozhukov, V., Cinelli, C., Newey, W., Sharma A., and Syrgkanis, V. (2021). “Long Story Short: Omitted Variable Bias in Causal Machine Learning.”</a>
                  </div>
              </div>
-            <br>
+            </li>
+
 
              <li> sensemakr: Sensitivity Analysis Tools for OLS
                   <br>  
-                    [<a href="#sensemakr-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#sensemakr-desc" aria-expanded="false" aria-controls="sensemakr-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "https://doi.org/10.1111/rssb.12348" target="_blank">&nbsp;theory&nbsp;paper&nbsp;</a>]
                     [<a href = "https://www.researchgate.net/publication/340965014_sensemakr_Sensitivity_Analysis_Tools_for_OLS_in_R_and_Stata" target="_blank">&nbsp;software&nbsp;paper&nbsp;</a>]
                     [<a href = "http://carloscinelli.com/sensemakr/" target="_blank">&nbsp;webpage&nbsp;</a>]
                     [<a href = "https://github.com/carloscinelli/sensemakr" target="_blank">&nbsp;github&nbsp;</a>]
                     [<a href = "https://cran.r-project.org/web/packages/sensemakr/index.html" target="_blank">&nbsp;cran&nbsp;</a>]
-             </li>
+
              <div id="sensemakr-desc" class = "collapse"><br>
                 <div class="well">
                     The R package  <a href="https://cran.r-project.org/web/packages/sensemakr/index.html" target="_blank">sensemakr </a>   implements a suite of sensitivity analysis tools that extends the traditional omitted variable bias framework and makes it easier to understand the impact of omitted variables in regression models, as discussed in <a href="https://doi.org/10.1111/rssb.12348" target="_blank">Cinelli and Hazlett (2020)</a>.
                  </div>
              </div>
-            <br>
+            </li>
+
              
              
              <li> mr-sensemakr: Sensitivity Analysis Tools for Mendelian Randomization
                   <br>  
-                    [<a href="#mr-sensemakr-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#mr-sensemakr-desc" aria-expanded="false" aria-controls="mr-sensemakr-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "https://www.biorxiv.org/content/10.1101/2020.10.21.347773v1" target="_blank">&nbsp;paper&nbsp;</a>]
                     [<a href = "https://github.com/carloscinelli/mrsensemakr" target="_blank">&nbsp;github&nbsp;</a>]
-             </li>
+
              <div id="mr-sensemakr-desc" class = "collapse"><br>
                 <div class="well">
                     The R package <a href="https://github.com/carloscinelli/mrsensemakr" target="_blank"> mrsensemakr </a> implements sensitivity analysis tools for Mendelian Randomization, as discussed in <a href="https://www.biorxiv.org/content/10.1101/2020.10.21.347773v1" target="_blank">Cinelli et al (2020). Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy.</a>
                  </div>
              </div>
-            <br>
+            </li>
+
              
                <li> generalizing: Generalizing Experimental Results By Leveraging Knowledge of Mechanisms
                   <br>  
-                    [<a href="#generalizing-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#generalizing-desc" aria-expanded="false" aria-controls="generalizing-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "https://ftp.cs.ucla.edu/pub/stat_ser/r492.pdf" target="_blank">&nbsp;paper&nbsp;</a>]
                     [<a href = "https://github.com/carloscinelli/generalizing" target="_blank">&nbsp;github&nbsp;</a>]
-             </li>
+
              <div id="generalizing-desc" class = "collapse"><br>
                 <div class="well">
                     The R package  generalizing implements methods for generalizing experimental results leveraging the invariance of probabilities of causation, as discussed in <a href="https://ftp.cs.ucla.edu/pub/stat_ser/r492.pdf" target="_blank">Cinelli, C. and Pearl, J. (2020+) “Generalizing Experimental Results By Leveraging Knowledge of Mechanisms.” European Journal of Epidemiology.</a>
                  </div>
              </div>
-            <br>
+            </li>
+
              
              <li> sValues: Measures of the Sturdiness of Regression Coefficients
                   <br>  
-                    [<a href="#svalues-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#svalues-desc" aria-expanded="false" aria-controls="svalues-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "https://github.com/carloscinelli/sValues" target="_blank">&nbsp;github&nbsp;</a>]
                     [<a href = "https://cran.r-project.org/web/packages/sValues/" target="_blank">&nbsp;cran&nbsp;</a>]
-             </li>
+
              <div id="svalues-desc" class = "collapse"><br>
                 <div class="well">
                     The sValues package implements a measure of the sturdiness of regression coefficients (s-value) proposed and discussed by Ed. Leamer.
                  </div>
              </div>
-            <br>
+            </li>
+
              
             <li> NetworkRiskMeasures: Risk Measures for (Financial) Networks
                   <br>  
-                    [<a href="#nrm-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#nrm-desc" aria-expanded="false" aria-controls="nrm-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "https://github.com/carloscinelli/NetworkRiskMeasures" target="_blank">&nbsp;github&nbsp;</a>]
                     [<a href = "https://cran.r-project.org/web/packages/NetworkRiskMeasures/index.html" target="_blank">&nbsp;cran&nbsp;</a>]
-             </li>
+
              <div id="nrm-desc" class = "collapse"><br>
                 <div class="well">
                    The Network Risk Measures (NetworkRiskMeasures) package implements a set of tools to analyze systemic risk in (financial) networks in a unified framework.
                  </div>
              </div>
-            <br>
+            </li>
+
              
              
               <li> benford.analysis: Benford Analysis for Data Validation and Forensic Analytics
                   <br>  
-                    [<a href="#benford-desc" data-toggle="collapse">&nbsp;description&nbsp;</a>]
+                    [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#benford-desc" aria-expanded="false" aria-controls="benford-desc">&nbsp;description&nbsp;</button>]
                     [<a href = "https://github.com/carloscinelli/benford.analysis" target="_blank">&nbsp;github&nbsp;</a>]
                     [<a href = "https://cran.r-project.org/web/packages/benford.analysis/index.html" target="_blank">&nbsp;cran&nbsp;</a>]
-             </li>
+
              <div id="benford-desc" class = "collapse"><br>
                 <div class="well">
                     The Benford Analysis (benford.analysis) package provides tools that make it easier to validate data using Benford’s Law. The main purpose of the package is to identify suspicious data that need further verification.
                  </div>
              </div>
-            <br>
+            </li>
+
 
         </ul>
     </div>
@@ -240,19 +254,19 @@
     <br>
 
     <!--FOOTER-->
-    <hr width= 50%>
+    <hr style="width: 50%">
     <footer>
 
-        <center> 
+        <nav class="text-center" aria-label="Social links">
 
             [<a href = "https://github.com/carloscinelli" target="_blank" style="font-variant:small-caps">&nbsp;github&nbsp;</a>] 
 
-            [<a href = "https://scholar.google.com/citations?user=4fyZLIoAAAAJ&hl=en" target="_blank" style="font-variant:small-caps">&nbsp;google&nbsp;scholar&nbsp;</a>] 
+            [<a href = "https://scholar.google.com/citations?user=4fyZLIoAAAAJ&amp;hl=en" target="_blank" style="font-variant:small-caps">&nbsp;google&nbsp;scholar&nbsp;</a>]
 
             [<a href = "https://twitter.com/analisereal" target="_blank" style="font-variant:small-caps">&nbsp;twitter&nbsp;</a>] 
 
-        </center>  
+        </nav>
         <br>
     </footer>
-
-    <html>
+    </body>
+</html>

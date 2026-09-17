@@ -1,0 +1,34 @@
+/* Keep Bootstrap's fixed-width containers inside the page margins. */
+.container {
+  max-width: 100%;
+}
+
+.circle-avatar {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.spaced-list > li {
+  margin-bottom: 1.42857143em;
+}
+
+/* Use native buttons for disclosures while keeping the inline link styling. */
+.collapse-toggle {
+  padding: 0;
+  border: 0;
+  color: #337ab7;
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+}
+
+.collapse-toggle:hover,
+.collapse-toggle:focus {
+  color: #23527c;
+}
