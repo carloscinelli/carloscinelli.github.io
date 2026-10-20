@@ -41,3 +41,16 @@
   color: #666;
   font-size: 0.93em;
 }
+
+.abstract-languages {
+  margin-bottom: 0.75em;
+}
+
+.abstract-language-toggle[aria-pressed="true"] {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.bilingual-abstract p {
+  margin-bottom: 0;
+}
