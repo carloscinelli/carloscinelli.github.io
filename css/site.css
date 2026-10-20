@@ -1,3 +1,7 @@
+body {
+  font-size: 16px;
+}
+
 /* Keep Bootstrap's fixed-width containers inside the page margins. */
 .container {
   max-width: 100%;
