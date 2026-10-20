@@ -32,3 +32,12 @@
 .collapse-toggle:focus {
   color: #23527c;
 }
+
+.paper-meta {
+  font-style: italic;
+}
+
+.paper-coauthors {
+  color: #666;
+  font-size: 0.93em;
+}

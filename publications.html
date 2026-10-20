@@ -15,7 +15,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/site.css?v=8a2c3bcc">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -57,13 +57,29 @@
 
         <ul class="spaced-list">
             <li>
-            M. Väänänen, F. Cui, <b><u>Carlos Cinelli</u></b> and S. Tikka. "What Should We Measure Next? Finding Identification Strategies by Refining Mechanisms".
+            <strong class="paper-title">What Should We Measure Next? Finding Identification Strategies by Refining Mechanisms</strong>
+            <br>
+            <span class="paper-coauthors">with M. Väänänen, F. Cui and S. Tikka</span>
             <br>
             [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#next-covariate-abstract" aria-expanded="false" aria-controls="next-covariate-abstract">&nbsp;abstract&nbsp;</button>]
             [<a href="files/Vaananen%20et%20al%20-%20What%20Should%20We%20Measure%20Next.pdf">&nbsp;draft&nbsp;</a>]
             <div id="next-covariate-abstract" class="collapse"><br>
                 <div class="well">
                     Canonical approaches in causal inference treat model specification as fixed, assuming that researchers directly translate all relevant domain knowledge into a causal model, which can then be used to deduce its logical implications. Yet, in practical applications, model specification is often an iterative process, and involves exploration and introspection—of the many aspects of the phenomenon one could investigate, which ones actually matter for the identification of the causal effect of interest? In this paper we study the problem of iterative identification in partially specified causal models. We focus on determining where observing variables that intercept a direct effect or a confounding path between two variables could enable identification in semi-Markovian models. We give necessary and sufficient graphical conditions for when observing such variables can render an unidentifiable query identifiable, together with an efficient algorithm for locating all such opportunities in a given causal diagram. Our results can help analysts better navigate the model space by drawing attention to the parts of their substantive knowledge that could result in a successful identification strategy.
+                </div>
+            </div>
+            </li>
+
+            <li>
+            <strong class="paper-title">Pragmatic DML with AI-Learned Representations</strong>
+            <br>
+            <span class="paper-coauthors">with A. A. Fernández, V. Chernozhukov, S. Klaassen, W. K. Newey, M. Spindler, J. Teichert-Kluge and S. Vijaykumar</span>
+            <br>
+            [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#pragmatic-dml-abstract" aria-expanded="false" aria-controls="pragmatic-dml-abstract">&nbsp;abstract&nbsp;</button>]
+            [<a href="https://arxiv.org/pdf/2610.01935" target="_blank">&nbsp;draft&nbsp;</a>]
+            <div id="pragmatic-dml-abstract" class="collapse"><br>
+                <div class="well">
+                    Text, images, and other rich covariates are increasingly compressed into AI-learned representations and then used as controls in causal analysis. We study when this approach is valid and develop a practical framework for causal inference with learned representations. For a broad class of estimands, an imperfect representation distorts the target causal parameter by the product of two representation errors: one in the outcome regression and one in the balancing weight (or Riesz representer). This yields three constructive results. First, cross-fitted double machine learning (DML) provides valid Wald inference for the representation-dependent target. When representation errors are small, the same interval covers the causal parameter, and it can even attain the semiparametric efficiency bound. Second, fold-wise representation learning (or fine-tuning) is compatible with DML inference for the causal parameter. To this end, we develop convex- and star-aggregation pipelines for learning and combining representations. Third, when representation errors are substantial, we can provide interpretable sensitivity regions and root-<i>n</i> inference for their endpoints. In a multi-modal demand application, seven representation-specific estimates and their star aggregate all imply a negative near-unit elasticity for rank-based price response, and the result remains robust over the reported sensitivity grid.
                 </div>
             </div>
             </li>
@@ -83,7 +99,9 @@
             -->
 
             <li>
-            J. Wang, P. H. C. Sant'Anna, V. Chernozhukov and <b><u>Carlos Cinelli</u></b>. "Omitted Variable Bias in Difference-in-Differences Designs".
+            <strong class="paper-title">Omitted Variable Bias in Difference-in-Differences Designs</strong>
+            <br>
+            <span class="paper-coauthors">with J. Wang, P. H. C. Sant'Anna and V. Chernozhukov</span>
             <br>
             [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#ovb4did-abstract" aria-expanded="false" aria-controls="ovb4did-abstract">&nbsp;abstract&nbsp;</button>]
             [<a href="/files/Wang%20et%20al%20-%20OVB%20for%20DiD.pdf">&nbsp;draft&nbsp;</a>]
@@ -95,7 +113,9 @@
 
             
             <li>
-            <b><u>Carlos Cinelli</u></b>, A. Feller, G. Imbens, E. Kennedy, S. Magliacane and J. Zubizarreta. "A Dozen Challenges in Causality and Causal Inference".
+            <strong class="paper-title">A Dozen Challenges in Causality and Causal Inference</strong>
+            <br>
+            <span class="paper-coauthors">with A. Feller, G. Imbens, E. Kennedy, S. Magliacane and J. Zubizarreta</span>
             <br>
             [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#challenges-abstract" aria-expanded="false" aria-controls="challenges-abstract">&nbsp;abstract&nbsp;</button>]
             [<a href="files/Cinelli%20et%20al%20-%20challenges.pdf">&nbsp;draft&nbsp;</a>]
@@ -128,7 +148,11 @@
         <ol reversed start="19" class="spaced-list">
                         
             <li>
-                V. Chernozhukov, <b><u>Carlos Cinelli</u></b>, W. K. Newey, A. Sharma, and V. Syrgkanis (2026). "Long Story Short: Omitted Variable Bias in Causal Machine Learning." <b>Review of Economics and Statistics</b>
+                <strong class="paper-title">Long Story Short: Omitted Variable Bias in Causal Machine Learning</strong>
+                <br>
+                <span class="paper-coauthors">with V. Chernozhukov, W. K. Newey, A. Sharma and V. Syrgkanis</span>
+                <br>
+                <span class="paper-meta">Review of Economics and Statistics, 2026.</span>
                 <br>
                 <b class="text-danger">(best paper award SBE 2024)</b>
                 <br>
@@ -149,8 +173,11 @@
 
             
                 <li>
-                D. Tsao, R. Perry and <b><u>Carlos Cinelli</u></b> (2026). "On the minimum strength of (unobserved) covariates to overturn an insignificant result."
-                <b>Statistical Science</b>.
+                <strong class="paper-title">On the minimum strength of (unobserved) covariates to overturn an insignificant result</strong>
+                <br>
+                <span class="paper-coauthors">with D. Tsao and R. Perry</span>
+                <br>
+                <span class="paper-meta">Statistical Science, 2026.</span>
                 <br>
                 [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#insig-abstract" aria-expanded="false" aria-controls="insig-abstract">&nbsp;abstract&nbsp;</button>]
                 [<a href =  "files/Tsao,%20Perry%20and%20Cinelli%20-%20On%20the%20minimal%20strength%20to%20overturn%20insignificance.pdf"  target="_blank">&nbsp;preprint&nbsp;</a>]
@@ -166,7 +193,11 @@
             
 
                 <li>
-                N. J. Irons and <b><u>Carlos Cinelli</u></b> (2025). "Causally Sound Priors for Binary Experiments." <b>Bayesian Analysis</b>.
+                <strong class="paper-title">Causally Sound Priors for Binary Experiments</strong>
+                <br>
+                <span class="paper-coauthors">with N. J. Irons</span>
+                <br>
+                <span class="paper-meta">Bayesian Analysis, 2025.</span>
                 <br>
                 [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#brease-abstract" aria-expanded="false" aria-controls="brease-abstract">&nbsp;abstract&nbsp;</button>]
                 [<a href = "files/Irons%20and%20Cinelli%20-%20Causally%20Sound%20Priors.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
@@ -188,7 +219,11 @@
             
 
                 <li>
-                <b><u>Carlos Cinelli</u></b> and C. Hazlett (2025). "An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables." <b>Biometrika.</b>
+                <strong class="paper-title">An Omitted Variable Bias Framework for Sensitivity Analysis of Instrumental Variables</strong>
+                <br>
+                <span class="paper-coauthors">with C. Hazlett</span>
+                <br>
+                <span class="paper-meta">Biometrika, 2025.</span>
                 <br>
                 [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#ovb4iv-abstract" aria-expanded="false" aria-controls="ovb4iv-abstract">&nbsp;abstract&nbsp;</button>]
                 [<a href = "files/Cinelli%20and%20Hazlett%20-%20OVB%20for%20IV.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
@@ -213,7 +248,11 @@
 
             
             <li>
-                <b><u>Carlos Cinelli,</u></b> J. Ferwerda, and C. Hazlett (2024). "sensemakr: Sensitivity Analysis Tools for OLS in R and Stata." <b>Observational Studies.</b>
+                <strong class="paper-title">sensemakr: Sensitivity Analysis Tools for OLS in R and Stata</strong>
+                <br>
+                <span class="paper-coauthors">with J. Ferwerda and C. Hazlett</span>
+                <br>
+                <span class="paper-meta">Observational Studies, 2024.</span>
                 <br>
                 [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#jss_sensemakr" aria-expanded="false" aria-controls="jss_sensemakr">&nbsp;abstract&nbsp;</button>]
                 [<a href = "files/Cinelli%20et%20al%20-%20sensemakr.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
@@ -229,7 +268,11 @@
 
             
             <li>
-            P. Bach, V. Chernozhukov, <b><u>Carlos Cinelli</u></b>, L. Jia, S. Klaassen, N. Skotara, and M. Spindler. (2024) "Sensitivity Analysis for Causal ML: A Use Case at Booking.com." <b>KDD 2024 Workshop - Causal Inference and Machine Learning in Practice.</b>
+            <strong class="paper-title">Sensitivity Analysis for Causal ML: A Use Case at Booking.com</strong>
+            <br>
+            <span class="paper-coauthors">with P. Bach, V. Chernozhukov, L. Jia, S. Klaassen, N. Skotara and M. Spindler</span>
+            <br>
+            <span class="paper-meta">KDD 2024 Workshop - Causal Inference and Machine Learning in Practice, 2024.</span>
             <br>
             [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#booking-abstract" aria-expanded="false" aria-controls="booking-abstract">&nbsp;abstract&nbsp;</button>]
             [<a href =  "files/Bach%20et%20al%20-%20Booking.pdf"  target="_blank">&nbsp;preprint&nbsp;</a>]
@@ -244,7 +287,11 @@
 
             
                 <li>
-                <b><u>Carlos Cinelli</u></b>, A. Forney, and J. Pearl (2024). "A Crash Course in Good and Bad Controls." <b>Sociological Methods and Research.</b>
+                <strong class="paper-title">A Crash Course in Good and Bad Controls</strong>
+                <br>
+                <span class="paper-coauthors">with A. Forney and J. Pearl</span>
+                <br>
+                <span class="paper-meta">Sociological Methods and Research, 2024.</span>
                 <br>
                 <b class="text-danger">(featured in the most read and most cited articles of the journal)</b>
                 <br>
@@ -264,7 +311,11 @@
 
             
             <li>
-                L. Liu, <b><u>Carlos Cinelli</u></b>, and Z. Harchaoui. (2022). "Orthogonal Statistical Learning with Self-Concordant Loss." <b>Annual Conference on Learning Theory (COLT)</b>
+                <strong class="paper-title">Orthogonal Statistical Learning with Self-Concordant Loss</strong>
+                <br>
+                <span class="paper-coauthors">with L. Liu and Z. Harchaoui</span>
+                <br>
+                <span class="paper-meta">Annual Conference on Learning Theory (COLT), 2022.</span>
                 <br>
                  [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#self-concordant" aria-expanded="false" aria-controls="self-concordant">&nbsp;abstract&nbsp;</button>]
                  [<a href="https://arxiv.org/abs/2205.00350" target="_blank">&nbsp;preprint&nbsp;</a>]
@@ -277,8 +328,11 @@
 
                 
             <li>
-                <b><u>Carlos Cinelli,</u></b> N. LaPierre, B. Hill, S. Sankararaman and E. Eskin (2022). "Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy." 
-                <b>Nature Communications.</b>
+                <strong class="paper-title">Robust Mendelian randomization in the presence of residual population stratification, batch effects and horizontal pleiotropy</strong>
+                <br>
+                <span class="paper-coauthors">with N. LaPierre, B. Hill, S. Sankararaman and E. Eskin</span>
+                <br>
+                <span class="paper-meta">Nature Communications, 2022.</span>
                 <br>
                 [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#mr-abstract" aria-expanded="false" aria-controls="mr-abstract">&nbsp;abstract&nbsp;</button>]
                 [<a href = "https://doi.org/10.1101/2020.10.21.347773" target="_blank">&nbsp;preprint&nbsp;</a>]
@@ -300,8 +354,11 @@
 
             
              <li>
-                <b><u>Carlos Cinelli</u></b> and J. Pearl (2021). "Generalizing Experimental Results by Leveraging Knowledge of Mechanisms."
-                 <b>European Journal of Epidemiology.</b>
+                <strong class="paper-title">Generalizing Experimental Results by Leveraging Knowledge of Mechanisms</strong>
+                <br>
+                <span class="paper-coauthors">with J. Pearl</span>
+                <br>
+                <span class="paper-meta">European Journal of Epidemiology, 2021.</span>
                 <br>  
                 [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#mechanisms_abstract" aria-expanded="false" aria-controls="mechanisms_abstract">&nbsp;abstract&nbsp;</button>]
                 [<a href = "files/Cinelli%20and%20Pearl%20-%20Generalizing%20Experimental%20Results.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
@@ -315,8 +372,11 @@
 
             
               <li>
-                C. Zhang, <b><u>Carlos Cinelli</u></b>, B. Chen, and J. Pearl (2021). "Exploiting Equality Constraints in Causal Inference."
-                 <b>International Conference on Artificial Intelligence and Statistics (AISTATS).</b>
+                <strong class="paper-title">Exploiting Equality Constraints in Causal Inference</strong>
+                <br>
+                <span class="paper-coauthors">with C. Zhang, B. Chen and J. Pearl</span>
+                <br>
+                <span class="paper-meta">International Conference on Artificial Intelligence and Statistics (AISTATS), 2021.</span>
                 <br>  
                 [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#equality-abstract" aria-expanded="false" aria-controls="equality-abstract">&nbsp;abstract&nbsp;</button>]
                 [<a href = "https://ftp.cs.ucla.edu/pub/stat_ser/r504.pdf" target="_blank">&nbsp;preprint&nbsp;</a>]
@@ -329,7 +389,11 @@
             
             
             <li> 
-                <b ><u>Carlos Cinelli</u></b> and C. Hazlett (2020). "Making Sense of Sensitivity: Extending Omitted Variable Bias." <b>Journal of the Royal Statistical Society, Series B (Statistical Methodology).</b>
+                <strong class="paper-title">Making Sense of Sensitivity: Extending Omitted Variable Bias</strong>
+                <br>
+                <span class="paper-coauthors">with C. Hazlett</span>
+                <br>
+                <span class="paper-meta">Journal of the Royal Statistical Society, Series B (Statistical Methodology), 2020.</span>
                 <br>
                 <b class="text-danger">(featured in the most read and most cited articles of the journal)</b>
                 <br>
@@ -365,7 +429,11 @@
 
             
             <li>
-                D. Kumor, <b><u>Carlos Cinelli</u></b> and E. Bareinboim (2020). "Efficient Identification in Linear Structural Causal Models with Auxiliary Cutsets." <b>International Conference on Machine Learning (ICML).</b>
+                <strong class="paper-title">Efficient Identification in Linear Structural Causal Models with Auxiliary Cutsets</strong>
+                <br>
+                <span class="paper-coauthors">with D. Kumor and E. Bareinboim</span>
+                <br>
+                <span class="paper-meta">International Conference on Machine Learning (ICML), 2020.</span>
                 <br>
 
                 [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#acid-abstract" aria-expanded="false" aria-controls="acid-abstract">&nbsp;abstract&nbsp;</button>]
@@ -388,7 +456,11 @@
 
 
             <li>
-                <b><u>Carlos Cinelli</u></b>, D. Kumor, B. Chen, J. Pearl and E. Bareinboim (2019). "Sensitivity Analysis of Linear Structural Causal Models." <b>International Conference on Machine Learning (ICML).</b> 
+                <strong class="paper-title">Sensitivity Analysis of Linear Structural Causal Models</strong>
+                <br>
+                <span class="paper-coauthors">with D. Kumor, B. Chen, J. Pearl and E. Bareinboim</span>
+                <br>
+                <span class="paper-meta">International Conference on Machine Learning (ICML), 2019.</span>
                 <br>
 
                 [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#linear_abstract" aria-expanded="false" aria-controls="linear_abstract">&nbsp;abstract&nbsp;</button>]
@@ -411,7 +483,11 @@
 
 
             <li>
-                <b><u>Carlos Cinelli</u></b> and J. Pearl (2018). "On the utility of Causal Diagrams for Modeling Attrition." <b>Epidemiology.</b>
+                <strong class="paper-title">On the utility of Causal Diagrams for Modeling Attrition</strong>
+                <br>
+                <span class="paper-coauthors">with J. Pearl</span>
+                <br>
+                <span class="paper-meta">Epidemiology, 2018.</span>
                 <br>
                 [<button type="button" class="btn btn-link collapse-toggle" data-toggle="collapse" data-target="#attrition_abstract" aria-expanded="false" aria-controls="attrition_abstract">&nbsp;abstract&nbsp;</button>]
 
@@ -441,24 +517,38 @@ target="_blank"> bibtex </a>]
         <ol reversed class="spaced-list">
 
             <li>
-                <b><u>Carlos Cinelli</u></b> and R. Arthmar. "The debating tradition in Britain and the new political economy: William Thompson and John Stuart Mill at the London Co-operative Society in 1825." <b>Nova Economia</b>, v.28 (2), p.609-636, 2018.
+                <strong class="paper-title">The debating tradition in Britain and the new political economy: William Thompson and John Stuart Mill at the London Co-operative Society in 1825</strong>
+                <br>
+                <span class="paper-coauthors">with R. Arthmar</span>
+                <br>
+                <span class="paper-meta">Nova Economia, v.28 (2), p.609-636, 2018.</span>
 
             </li>
 
 
             <li>
-                R. Arthmar and <b><u>Carlos Cinelli</u></b> (in portuguese). "The classical economics between laissez-faire and socialism." <b>EconomiA</b>, v. 14, p. 227-252, 2013.
+                <strong class="paper-title">The classical economics between laissez-faire and socialism</strong>
+                <br>
+                <span class="paper-coauthors">with R. Arthmar</span>
+                <br>
+                <span class="paper-meta">(in portuguese). EconomiA, v. 14, p. 227-252, 2013.</span>
             </li>
 
 
             <li>
-                <b><u>Carlos Cinelli</u></b> (in portuguese). "Voluntary transfers and municipal corruption in Brazil: preliminary evidence from the irregular accounts registry of the Federal Court of Accounts." <b>Revista Economia e Tecnologia</b>, v. 7, p. 89-97, 2011.
+                <strong class="paper-title">Voluntary transfers and municipal corruption in Brazil: preliminary evidence from the irregular accounts registry of the Federal Court of Accounts</strong>
+                <br>
+                <span class="paper-meta">(in portuguese). Revista Economia e Tecnologia, v. 7, p. 89-97, 2011.</span>
             </li>
 
 
 
             <li>
-                <b><u>Carlos Cinelli</u></b> and R. Arthmar (in portuguese). "When the classical liberal and the socialist confront: Bastiat, Proudhon and capital rent." <b>Nova Economia</b>, v. 20, p. 509-541, 2010.
+                <strong class="paper-title">When the classical liberal and the socialist confront: Bastiat, Proudhon and capital rent</strong>
+                <br>
+                <span class="paper-coauthors">with R. Arthmar</span>
+                <br>
+                <span class="paper-meta">(in portuguese). Nova Economia, v. 20, p. 509-541, 2010.</span>
             </li>
 
 
@@ -477,7 +567,11 @@ target="_blank"> bibtex </a>]
         <ul class="spaced-list">
         
              <li>
-                <b><u>Carlos Cinelli</u></b> and E. Bareinboim (2019). "Generalizability in Causal Inference." Tutorial prepared for the Southern California Methods Conference, Riverside, 2019.
+                <strong class="paper-title">Generalizability in Causal Inference</strong>
+                <br>
+                <span class="paper-coauthors">with E. Bareinboim</span>
+                <br>
+                <span class="paper-meta">2019. Tutorial prepared for the Southern California Methods Conference, Riverside, 2019.</span>
                 <br>
                  [<a href = "files/Cinelli%20and%20Bareinboim%20-%20SoCal19.pdf" target="_blank">&nbsp;slides&nbsp;</a>] 
             </li>
@@ -486,7 +580,9 @@ target="_blank"> bibtex </a>]
 
             
             <li>
-                <b><u>Carlos Cinelli</u></b> (2016 - In Portuguese). "R Programming." 
+                <strong class="paper-title">R Programming</strong>
+                <br>
+                <span class="paper-meta">2016 - In Portuguese.</span>
                  <br>
                 [<a href = "https://carloscinelli.com/files/Cinelli%20(2016)%20-%20R%20course.pdf" target="_blank">&nbsp;slides&nbsp;</a>] 
             </li>
